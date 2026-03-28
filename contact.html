@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | FA Labo</title>
+  <meta name="description" content="FA Labo へのお問い合わせはこちら。PLCプログラミング・制御盤改造・HMI/SCADAに関するご相談をお気軽にどうぞ。">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">FA <span>Labo</span></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">サービス</a></li>
+        <li class="nav-item"><a class="nav-link" href="works.html">実績</a></li>
+        <li class="nav-item"><a class="nav-link" href="tools.html">無料ツール</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">プロフィール</a></li>
+        <li class="nav-item ms-lg-3">
+          <a class="nav-link btn btn-accent px-4 py-2 active" href="contact.html" style="color:#fff;">お問い合わせ</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>お問い合わせ</h1>
+    <p>FAシステムでお困りのことがあればお気軽にご相談ください</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="row g-5 justify-content-center">
+
+      <!-- 連絡方法 -->
+      <div class="col-lg-4">
+        <h4 class="fw-bold mb-4" style="color:var(--primary);">連絡先・SNS</h4>
+
+        <div class="mb-4">
+          <div class="d-flex align-items-center gap-3 p-3 rounded" style="background:var(--light-bg);">
+            <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;">
+              <i class="fab fa-x-twitter" style="font-size:1.2rem;"></i>
+            </div>
+            <div>
+              <div class="fw-bold small" style="color:var(--primary);">Twitter / X</div>
+              <a href="https://x.com/fa_yoshinobu" target="_blank" class="small">@fa_yoshinobu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <div class="d-flex align-items-center gap-3 p-3 rounded" style="background:var(--light-bg);">
+            <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;background:linear-gradient(135deg,#55c500,#3d8f00);">
+              <i class="fas fa-pen-nib" style="font-size:1.2rem;"></i>
+            </div>
+            <div>
+              <div class="fw-bold small" style="color:var(--primary);">Qiita</div>
+              <a href="https://qiita.com/fa_yoshinobu" target="_blank" class="small">@fa_yoshinobu</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-4 rounded mt-4" style="background:var(--light-bg);border-left:4px solid var(--accent);">
+          <h6 class="fw-bold" style="color:var(--primary);">対応について</h6>
+          <ul class="small text-muted list-unstyled mb-0">
+            <li class="mb-2"><i class="fas fa-check me-2" style="color:var(--accent);"></i>PLCプログラミング全般</li>
+            <li class="mb-2"><i class="fas fa-check me-2" style="color:var(--accent);"></i>制御盤改造・HMI/SCADA構築</li>
+            <li class="mb-2"><i class="fas fa-check me-2" style="color:var(--accent);"></i>FAシステム設計・試運転支援</li>
+            <li class="mb-2"><i class="fas fa-check me-2" style="color:var(--accent);"></i>旧式PLCリプレース計画</li>
+            <li><i class="fas fa-check me-2" style="color:var(--accent);"></i>トラブルシューティング相談</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- フォーム -->
+      <div class="col-lg-7">
+        <div class="contact-card">
+          <h4 class="fw-bold mb-1" style="color:var(--primary);">お問い合わせフォーム</h4>
+          <p class="text-muted small mb-4">必要事項を入力してお送りください。通常2〜3営業日以内にご返信いたします。</p>
+
+          <!-- Formspree を使用 - action の YOUR_FORM_ID を Formspree で取得したIDに変更してください -->
+          <form action="https://formspree.io/f/xaqlnpdz" method="POST">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-bold">お名前 <span class="text-danger">*</span></label>
+                <input type="text" name="name" class="form-control" placeholder="山田 太郎" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold">会社名</label>
+                <input type="text" name="company" class="form-control" placeholder="株式会社〇〇">
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-bold">メールアドレス <span class="text-danger">*</span></label>
+                <input type="email" name="email" class="form-control" placeholder="example@company.co.jp" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-bold">お問い合わせ種別</label>
+                <select name="category" class="form-select">
+                  <option value="">選択してください</option>
+                  <option>PLCプログラミング</option>
+                  <option>HMI/SCADA構築</option>
+                  <option>制御盤改造</option>
+                  <option>FAシステム設計・立ち上げ支援</option>
+                  <option>旧式PLCリプレース</option>
+                  <option>トラブルシューティング相談</option>
+                  <option>その他</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-bold">お問い合わせ内容 <span class="text-danger">*</span></label>
+                <textarea name="message" class="form-control" rows="6" placeholder="設備の概要・ご要望・スケジュールなどをお気軽にご記入ください。" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-accent w-100 py-3">
+                  <i class="fas fa-paper-plane me-2"></i>送信する
+                </button>
+              </div>
+            </div>
+          </form>
+
+          <div class="mt-3 p-3 rounded small text-muted" style="background:var(--light-bg);">
+            <i class="fas fa-info-circle me-1" style="color:var(--accent);"></i>
+            フォームはFormspreeを使用しています。送信内容はメールでお届けします。
+            SNSからのご連絡は <a href="https://x.com/fa_yoshinobu" target="_blank">Twitter/X (@fa_yoshinobu)</a> へどうぞ。
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">FA <span>Labo</span></div>
+        <p class="small mt-2">フリーランスFAエンジニア よしのぶ</p>
+        <div class="mt-3">
+          <a href="https://x.com/fa_yoshinobu" class="social-link" target="_blank"><i class="fab fa-x-twitter"></i></a>
+          <a href="https://qiita.com/fa_yoshinobu" class="social-link" target="_blank"><i class="fas fa-pen-nib"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-white-50 small fw-bold mb-2">MENU</div>
+        <ul class="list-unstyled small">
+          <li class="mb-1"><a href="index.html">ホーム</a></li>
+          <li class="mb-1"><a href="services.html">サービス</a></li>
+          <li class="mb-1"><a href="works.html">実績</a></li>
+          <li class="mb-1"><a href="tools.html">無料ツール</a></li>
+          <li class="mb-1"><a href="about.html">プロフィール</a></li>
+          <li class="mb-1"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <div class="text-white-50 small fw-bold mb-2">LINKS</div>
+        <ul class="list-unstyled small">
+          <li class="mb-1"><a href="https://qiita.com/fa_yoshinobu" target="_blank"><i class="fas fa-external-link-alt me-1"></i>Qiita 技術記事</a></li>
+          <li class="mb-1"><a href="https://x.com/fa_yoshinobu" target="_blank"><i class="fab fa-x-twitter me-1"></i>Twitter/X</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="text-center small">&copy; 2025 FA Labo. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
