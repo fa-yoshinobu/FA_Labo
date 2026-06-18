@@ -53,6 +53,7 @@
         <li class="nav-item"><a class="nav-link" href="services.html">サービス</a></li>
         <li class="nav-item"><a class="nav-link" href="works.html">実績</a></li>
         <li class="nav-item"><a class="nav-link active" href="tools.html">無料ツール</a></li>
+        <li class="nav-item"><a class="nav-link" href="paid-tools.html">有料ツール</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">プロフィール</a></li>
         <li class="nav-item ms-lg-3">
           <a class="nav-link btn btn-accent px-4 py-2" href="contact.html" style="color:#fff;">お問い合わせ</a>
@@ -96,7 +97,32 @@
     <div class="mb-5">
       <div class="section-title"><i class="fas fa-plug me-2" style="color:var(--accent);"></i>PLC <span>通信ライブラリ</span></div>
       <div class="divider"></div>
-      <p class="text-muted">Python・C#（.NET）・C++ で使えるPLC通信ライブラリ。自動化スクリプトやWindowsアプリからPLCと直接通信できます。</p>
+      <p class="text-muted">Python・C#（.NET）・C++・Rust・Node-RED で使えるPLC通信ライブラリ。自動化スクリプトやWindowsアプリからPLCと直接通信できます。</p>
+    </div>
+
+    <div class="row g-4 mb-5">
+      <div class="col-lg-8">
+        <div class="work-card h-100">
+          <div class="d-flex align-items-start gap-3">
+            <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;">
+              <i class="fas fa-book-open" style="font-size:1.2rem;"></i>
+            </div>
+            <div>
+              <span class="industry-badge">Documentation</span>
+              <h5>PLC通信ライブラリまとめサイト</h5>
+              <p class="text-muted small">自作PLC通信ライブラリのドキュメント・対応プロトコル・使い方をまとめたサイトです。</p>
+              <div class="mb-3">
+                <span class="skill-tag outline">PLC通信</span>
+                <span class="skill-tag outline">ドキュメント</span>
+                <span class="skill-tag outline">まとめサイト</span>
+              </div>
+              <a href="https://fa-yoshinobu.github.io/plc-comm-docs-site/" class="btn btn-sm btn-accent" target="_blank">
+                <i class="fas fa-arrow-up-right-from-square me-1"></i>まとめサイトを見る
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- SLMP (三菱) -->
@@ -161,6 +187,42 @@
           </a>
         </div>
       </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="work-card h-100">
+          <h5><i class="fab fa-rust me-2" style="color:#ce412b;"></i>plc-comm-slmp-rust</h5>
+          <p class="text-muted small">Mitsubishi MELSEC 向けの非同期 Rust SLMP クライアント。Binary 3E/4E の TCP/UDP 通信に対応。</p>
+          <div class="mb-3">
+            <span class="skill-tag outline">Rust</span>
+            <span class="skill-tag outline">SLMP</span>
+            <span class="skill-tag outline">TCP/UDP</span>
+          </div>
+          <a href="https://github.com/fa-yoshinobu/plc-comm-slmp-rust" class="btn btn-sm btn-accent" target="_blank">
+            <i class="fab fa-github me-1"></i>GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MC Protocol Serial (三菱) -->
+    <h5 class="fw-bold mb-3" style="color:var(--primary);">
+      <span class="industry-badge" style="font-size:0.85rem;">三菱 MELSEC</span>
+      MCプロトコル シリアル通信ライブラリ
+    </h5>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="work-card h-100">
+          <h5><i class="fas fa-microchip me-2" style="color:#00599c;"></i>plc-comm-mcprotocol-serial-cpp</h5>
+          <p class="text-muted small">RS-232C/RS-485 経由の MELSEC MC プロトコル通信に対応した C++ ライブラリ。MCUファームウェアやホスト側ツールで利用可能。</p>
+          <div class="mb-3">
+            <span class="skill-tag outline">C++</span>
+            <span class="skill-tag outline">MC Protocol</span>
+            <span class="skill-tag outline">RS-232C/RS-485</span>
+          </div>
+          <a href="https://github.com/fa-yoshinobu/plc-comm-mcprotocol-serial-cpp" class="btn btn-sm btn-accent" target="_blank">
+            <i class="fab fa-github me-1"></i>GitHub
+          </a>
+        </div>
+      </div>
     </div>
 
     <!-- Host Link (キーエンス) -->
@@ -169,7 +231,7 @@
       Host Link通信ライブラリ
     </h5>
     <div class="row g-4 mb-5">
-      <div class="col-md-4">
+      <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
           <h5><i class="fab fa-python me-2" style="color:#3776ab;"></i>plc-comm-hostlink-python</h5>
           <p class="text-muted small">KEYENCE KV シリーズ用 Python Host Link クライアント。</p>
@@ -182,7 +244,7 @@
           </a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
           <h5><i class="fas fa-code me-2" style="color:#512bd4;"></i>plc-comm-hostlink-dotnet</h5>
           <p class="text-muted small">KEYENCE KV シリーズ用 .NET 9.0 クライアント。C# から簡単にKV通信が可能。</p>
@@ -196,7 +258,7 @@
           </a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
           <h5><i class="fab fa-node-js me-2" style="color:#83cd29;"></i>node-red-contrib-plc-comm-kvhostlink</h5>
           <p class="text-muted small">Node-RED から KEYENCE KV シリーズへ Host Link 通信できるノード。</p>
@@ -206,6 +268,20 @@
             <span class="skill-tag outline">Host Link</span>
           </div>
           <a href="https://github.com/fa-yoshinobu/node-red-contrib-plc-comm-kvhostlink" class="btn btn-sm btn-accent" target="_blank">
+            <i class="fab fa-github me-1"></i>GitHub
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="work-card h-100">
+          <h5><i class="fab fa-rust me-2" style="color:#ce412b;"></i>plc-comm-hostlink-rust</h5>
+          <p class="text-muted small">KEYENCE KV シリーズ向けの非同期 Rust Host Link クライアント。TCP/UDP 通信と型付き read/write に対応。</p>
+          <div class="mb-3">
+            <span class="skill-tag outline">Rust</span>
+            <span class="skill-tag outline">Host Link</span>
+            <span class="skill-tag outline">KEYENCE KV</span>
+          </div>
+          <a href="https://github.com/fa-yoshinobu/plc-comm-hostlink-rust" class="btn btn-sm btn-accent" target="_blank">
             <i class="fab fa-github me-1"></i>GitHub
           </a>
         </div>
@@ -259,7 +335,29 @@
       <p class="text-muted">リアルタイム監視やデータ分析に使えるツール群。</p>
     </div>
     <div class="row g-4">
-      <div class="col-md-6">
+      <div class="col-lg-4 col-md-6">
+        <div class="work-card h-100">
+          <div class="d-flex align-items-start gap-3">
+            <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;">
+              <i class="fas fa-wave-square" style="font-size:1.2rem;"></i>
+            </div>
+            <div>
+              <span class="industry-badge">MELSEC / KEYENCE / TOYOPUC</span>
+              <h5>PLC Scope</h5>
+              <p class="text-muted small">MELSEC SLMP・KEYENCE Host Link・TOYOPUC Computer Link に対応した Windows PLC 監視・デバイス書込ツール。</p>
+              <div class="mb-3">
+                <span class="skill-tag outline">Windows</span>
+                <span class="skill-tag outline">.NET 9</span>
+                <span class="skill-tag outline">監視・書込</span>
+              </div>
+              <a href="https://github.com/fa-yoshinobu/plc-scope-dotnet" class="btn btn-sm btn-accent" target="_blank">
+                <i class="fab fa-github me-1"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
         <div class="work-card h-100">
           <div class="d-flex align-items-start gap-3">
             <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;background:linear-gradient(135deg,#e83030,#b00);">
@@ -281,7 +379,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-4 col-md-6">
         <div class="work-card h-100">
           <div class="d-flex align-items-start gap-3">
             <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;background:linear-gradient(135deg,#e83030,#b00);">
@@ -385,6 +483,7 @@
           <li class="mb-1"><a href="services.html">サービス</a></li>
           <li class="mb-1"><a href="works.html">実績</a></li>
           <li class="mb-1"><a href="tools.html">無料ツール</a></li>
+          <li class="mb-1"><a href="paid-tools.html">有料ツール</a></li>
           <li class="mb-1"><a href="about.html">プロフィール</a></li>
           <li class="mb-1"><a href="contact.html">お問い合わせ</a></li>
         </ul>
