@@ -28,6 +28,7 @@ FA Labo は、フリーランスFAエンジニア「よしのぶ」のポート�
 - KEYENCE Host Link: Python / .NET / Rust / Node-RED
 - MELSEC MCプロトコル シリアル通信 C++
 - JTEKT TOYOPUC ComputerLink: Python / .NET
+- Factory I/O SLMP / Host Link Gateway
 - PLC Scope
 - SysmacVariableBackupViewer
 - SysmacDataTraceViewer
@@ -69,6 +70,7 @@ Start-Process .\paid-tools.html
 
 - 共通ナビは各HTMLに直接記述しています。ページを追加した場合は全ページのナビとフッターを更新します。
 - スタイルは `css/style.css` に集約しています。
+- GitHubリンクボタンなどの見た目ルールは `docs/ui-guidelines.md` を確認します。
 - GitHub Pages公開用に `.nojekyll` を配置しています。
 - Google Search Console用の確認ファイルとして `google602250a356eea49d.html` を保持しています。
 
