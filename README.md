@@ -15,7 +15,7 @@ FA Labo は、フリーランスFAエンジニア「よしのぶ」のポート�
 | `services.html` | PLCプログラミング、HMI/SCADA、制御盤改造、立ち上げ支援などのサービス詳細。 |
 | `works.html` | 製鉄、医薬品、自動車、水処理などの実績紹介。 |
 | `tools.html` | MIT Licenseで公開している無料ツール・PLC通信ライブラリ一覧。 |
-| `paid-tools.html` | 開発中の有料ツール紹介。PLC IO Checkerの説明サイトへの導線。 |
+| `paid-tools.html` | FA Labo PLC Consoleの紹介、App Store、公式サイトへの導線。 |
 | `about.html` | プロフィール、技術スキル、所有PLC/開発機材。 |
 | `contact.html` | お問い合わせフォームとSNSリンク。 |
 
@@ -35,9 +35,9 @@ FA Labo は、フリーランスFAエンジニア「よしのぶ」のポート�
 - PDF_Title_to_Filename
 - Network_Preset_Switcher
 
-### 有料ツール
+### 公開アプリ
 
-- PLC IO Checker: Android / iOS向けのPLC接続確認、監視、書込、記録支援アプリ
+- FA Labo PLC Console: iOSで公開中のPLC接続確認、監視、書込、記録支援アプリ。Android版は公開準備中
 
 ## 技術構成
 
