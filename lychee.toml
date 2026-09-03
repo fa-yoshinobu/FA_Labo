@@ -9,6 +9,8 @@ timeout = 20
 exclude = [
   "^https?://(www\\.)?x\\.com/",
   "^https?://(www\\.)?twitter\\.com/",
+  # Form POST endpoint - only accepts POST, returns 405 to a link check.
+  "^https?://formspree\\.io/",
 ]
 
 # Don't crawl vendored third-party assets.

@@ -16,21 +16,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Validate root pages
-        uses: Cyb3r-Jak3/html5validator-action@v2
+      - uses: Cyb3r-Jak3/html5validator-action@v8.0.0
         with:
           root: .
-          blacklist: vendor
-          css: false
-          log_level: error
+          blacklist: vendor google602250a356eea49d.html
 
   link-check:
     name: Check links (lychee)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run lychee
-        uses: lycheeverse/lychee-action@v2
+      - uses: lycheeverse/lychee-action@v2
         with:
           args: >-
             --config lychee.toml
