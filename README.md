@@ -5,7 +5,7 @@ FA Labo は、フリーランスFAエンジニア「よしのぶ」のポート�
 ## 公開URL
 
 - 公式サイト: https://fa-labo.com/
-- GitHub Pages: https://fa-yoshinobu.github.io/FA_Labo/
+- GitHub Pages（`fa-labo.com` へリダイレクト）: https://fa-yoshinobu.github.io/FA_Labo/
 
 ## 主なページ
 
@@ -76,6 +76,6 @@ Start-Process .\paid-tools.html
 
 ## ライセンス
 
-このリポジトリのサイト本文・HTML/CSSはFA Laboサイト運用のためのものです。
+このリポジトリのサイト本文・HTML/CSS・画像アセットはFA Laboサイト運用のためのものです。
 
-掲載している各ツール・ライブラリのライセンスは、それぞれのリンク先リポジトリを確認してください。
+掲載しているツール・ライブラリは、すべて MIT License で公開しています。個人・商用を問わず無料でご利用いただけます。詳細は各リンク先リポジトリの `LICENSE` を参照してください。
