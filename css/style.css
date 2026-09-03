@@ -2,6 +2,36 @@
    FA Labo - Custom Styles
    =========================== */
 
+/* ---- Self-hosted webfont (Noto Sans JP, subset: JIS X 0208 Level 1 + site glyphs) ---- */
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../vendor/fonts/notosansjp/NotoSansJP-400.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../vendor/fonts/notosansjp/NotoSansJP-500.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../vendor/fonts/notosansjp/NotoSansJP-700.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('../vendor/fonts/notosansjp/NotoSansJP-800.woff2') format('woff2');
+}
+
 :root {
   --primary: #1a2744;
   --accent: #f07c00;

@@ -42,11 +42,10 @@ FA Labo は、フリーランスFAエンジニア「よしのぶ」のポート�
 ## 技術構成
 
 - 静的HTML/CSSサイト
-- Bootstrap 5
-- Font Awesome
-- Google Fonts: Noto Sans JP
+- Bootstrap 5 / Font Awesome 6 / Noto Sans JP —— すべて `vendor/` に同梱（CDN 非依存。詳細は `vendor/README.md`）
 - GitHub Pages
 - Custom domain: `fa-labo.com`
+- CI: `.github/workflows/ci.yml`（Nu Html Checker + lychee リンク切れチェック）
 
 ## ローカル確認
 
@@ -69,7 +68,8 @@ Start-Process .\paid-tools.html
 ## 更新メモ
 
 - 共通ナビは各HTMLに直接記述しています。ページを追加した場合は全ページのナビとフッターを更新します。
-- スタイルは `css/style.css` に集約しています。
+- スタイルは `css/style.css` に集約しています（`@font-face` もここ）。
+- Font Awesome アイコンを追加、または JIS X 0208 Level 1 外の漢字を使った場合は `python vendor/build_fonts.py` を実行してサブセットを更新します（未実行の間はその字だけ端末フォントにフォールバック）。
 - GitHubリンクボタンなどの見た目ルールは `docs/ui-guidelines.md` を確認します。
 - GitHub Pages公開用に `.nojekyll` を配置しています。
 - Google Search Console用の確認ファイルとして `google602250a356eea49d.html` を保持しています。

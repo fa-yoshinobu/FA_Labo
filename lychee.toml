@@ -1,0 +1,18 @@
+# Config for the lychee link checker (see .github/workflows/ci.yml)
+
+# Retry transient failures before giving up.
+max_retries = 2
+retry_wait_time = 2
+timeout = 20
+
+# Some hosts block or rate-limit CI runners regardless of link health.
+exclude = [
+  "^https?://(www\\.)?x\\.com/",
+  "^https?://(www\\.)?twitter\\.com/",
+]
+
+# Don't crawl vendored third-party assets.
+exclude_path = ["vendor"]
+
+# Treat these as success in addition to 2xx.
+accept = ["200", "206", "429"]

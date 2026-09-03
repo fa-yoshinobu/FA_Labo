@@ -1,0 +1,15 @@
+# Normalise text to LF in the repo; keep binary assets byte-exact.
+* text=auto eol=lf
+
+*.woff2 binary
+*.woff  binary
+*.ttf   binary
+*.otf   binary
+*.ico   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+
+# Vendored third-party bundles: don't show in diffs.
+vendor/** linguist-vendored
