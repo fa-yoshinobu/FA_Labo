@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fa-yoshinobu.github.io/FA_Labo/</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://fa-labo.com/</loc>
+    <lastmod>2026-09-04</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://fa-yoshinobu.github.io/FA_Labo/services.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://fa-labo.com/services.html</loc>
+    <lastmod>2026-09-04</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://fa-yoshinobu.github.io/FA_Labo/works.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://fa-labo.com/works.html</loc>
+    <lastmod>2026-09-04</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://fa-yoshinobu.github.io/FA_Labo/tools.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://fa-labo.com/tools.html</loc>
+    <lastmod>2026-09-04</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://fa-yoshinobu.github.io/FA_Labo/paid-tools.html</loc>
-    <lastmod>2026-08-31</lastmod>
+    <loc>https://fa-labo.com/paid-tools.html</loc>
+    <lastmod>2026-09-04</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://fa-yoshinobu.github.io/FA_Labo/about.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://fa-labo.com/about.html</loc>
+    <lastmod>2026-09-04</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://fa-yoshinobu.github.io/FA_Labo/contact.html</loc>
-    <lastmod>2026-03-29</lastmod>
+    <loc>https://fa-labo.com/contact.html</loc>
+    <lastmod>2026-09-04</lastmod>
     <priority>0.70</priority>
   </url>
 </urlset>

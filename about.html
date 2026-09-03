@@ -3,13 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <title>プロフィール | FA Labo</title>
   <meta name="description" content="FA Labo よしのぶのプロフィール。20年のFA実務経験を活かし、PLC・制御盤改造・HMI/SCADA構築、インボイス対応請求やトラブル対応を個人事業主として支援しています。">
   <meta name="google-site-verification" content="TbbvS2LRwy70jLpeVsNq9c6Ckm_LnoCfNuU_Xna5lOI">
   <meta property="og:title" content="プロフィール | FA Labo">
   <meta property="og:description" content="FA Labo よしのぶのプロフィール。20年のFA実務経験を活かし、PLC・制御盤改造・HMI/SCADA構築、インボイス対応請求やトラブル対応を個人事業主として支援しています。">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://fa-yoshinobu.github.io/FA_Labo/about.html">
+  <link rel="canonical" href="https://fa-labo.com/about.html">
+  <meta property="og:url" content="https://fa-labo.com/about.html">
+  <meta property="og:site_name" content="FA Labo">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://fa-labo.com/assets/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="FA Labo — フリーランスFAエンジニア よしのぶ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@fa_yoshinobu">
+  <meta name="twitter:creator" content="@fa_yoshinobu">
   <meta name="robots" content="index,follow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-43HQKJT0WV"></script>
@@ -30,7 +43,7 @@
     "@type": "ProfessionalService",
     "name": "FA Labo",
     "description": "FA Labo は 20 年超のフリーランスFAエンジニア。PLC プログラミング、制御盤改造、HMI/SCADA 構築、試運転支援、インボイス請求まで一貫対応します。",
-    "url": "https://fa-yoshinobu.github.io/FA_Labo/",
+    "url": "https://fa-labo.com/",
     "areaServed": "Japan",
     "sameAs": [
       "https://x.com/fa_yoshinobu",
@@ -44,7 +57,7 @@
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">FA <span>Labo</span></a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="メニューを開閉">
       <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
@@ -54,7 +67,7 @@
         <li class="nav-item"><a class="nav-link" href="works.html">実績</a></li>
         <li class="nav-item"><a class="nav-link" href="tools.html">無料ツール</a></li>
         <li class="nav-item"><a class="nav-link" href="paid-tools.html">有料ツール</a></li>
-        <li class="nav-item"><a class="nav-link active" href="about.html">プロフィール</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">プロフィール</a></li>
         <li class="nav-item ms-lg-3">
           <a class="nav-link btn btn-accent px-4 py-2" href="contact.html" style="color:#fff;">お問い合わせ</a>
         </li>
@@ -76,17 +89,17 @@
     <div class="row align-items-center gy-5">
       <div class="col-lg-4 text-center">
         <div class="profile-img-wrap">
-          <i class="fas fa-user-tie"></i>
+          <i class="fas fa-user-tie" aria-hidden="true"></i>
         </div>
-        <h3 class="fw-800" style="color:var(--primary);font-weight:800;">よしのぶ</h3>
+        <h2 class="h3 fw-800" style="color:var(--primary);font-weight:800;">よしのぶ</h2>
         <p class="text-muted">フリーランスFAエンジニア</p>
         <div class="d-flex justify-content-center gap-2 mt-3">
-          <a href="https://x.com/fa_yoshinobu" class="social-link" target="_blank" style="background:var(--primary);color:#fff;"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://qiita.com/fa_yoshinobu" class="social-link" target="_blank" style="background:#55c500;color:#fff;"><i class="fas fa-pen-nib"></i></a>
+          <a href="https://x.com/fa_yoshinobu" class="social-link" target="_blank" rel="noopener" style="background:var(--primary);color:#fff;"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="https://qiita.com/fa_yoshinobu" class="social-link" target="_blank" rel="noopener" style="background:#55c500;color:#fff;"><i class="fas fa-pen-nib" aria-hidden="true"></i></a>
         </div>
       </div>
       <div class="col-lg-8">
-        <div class="section-title fs-3">自己紹介</div>
+        <h2 class="section-title fs-3">自己紹介</h2>
         <div class="divider"></div>
         <p>FA（Factory Automation）分野において<strong>約20年の実務経験</strong>を持つ制御エンジニアです。製鉄設備・医薬品製造装置・自動車生産ライン・船舶向け装置などの制御システム開発に従事してきました。</p>
         <p>PLCプログラミング・制御盤改造・HMI/SCADA構築・試運転対応まで、設備開発の一連工程を担当してきました。現在はフリーランスとしてFAシステム開発および設備立ち上げ支援に従事しています。</p>
@@ -120,7 +133,7 @@
 <section class="section section-alt">
   <div class="container">
     <div class="text-center mb-5">
-      <div class="section-title">技術 <span>スキル</span></div>
+      <h2 class="section-title">技術 <span>スキル</span></h2>
       <div class="divider mx-auto"></div>
     </div>
     <div class="row g-4">
@@ -128,14 +141,14 @@
       <!-- PLC -->
       <div class="col-lg-6">
         <div class="bg-white p-4 rounded shadow-sm h-100">
-          <h5 class="fw-bold mb-3" style="color:var(--primary);"><i class="fas fa-microchip me-2" style="color:var(--accent);"></i>PLC（主要）</h5>
+          <h3 class="h5 fw-bold mb-3" style="color:var(--primary);"><i class="fas fa-microchip me-2" aria-hidden="true" style="color:var(--accent);"></i>PLC（主要）</h3>
           <div>
             <span class="skill-tag accent m-1">三菱 MELSEC-A</span>
             <span class="skill-tag accent m-1">MELSEC-QnA/QnU</span>
             <span class="skill-tag accent m-1">iQ-F</span>
             <span class="skill-tag accent m-1">iQ-R</span>
           </div>
-          <h5 class="fw-bold mb-3 mt-4" style="color:var(--primary);"><i class="fas fa-microchip me-2" style="color:var(--text-muted);"></i>PLC（その他）</h5>
+          <h3 class="h5 fw-bold mb-3 mt-4" style="color:var(--primary);"><i class="fas fa-microchip me-2" aria-hidden="true" style="color:var(--text-muted);"></i>PLC（その他）</h3>
           <div>
             <span class="skill-tag m-1">SIEMENS S7-400H</span>
             <span class="skill-tag m-1">JTEKT TOYOPUC PCS/PCS-J</span>
@@ -149,7 +162,7 @@
       <!-- HMI/SCADA -->
       <div class="col-lg-6">
         <div class="bg-white p-4 rounded shadow-sm h-100">
-          <h5 class="fw-bold mb-3" style="color:var(--primary);"><i class="fas fa-desktop me-2" style="color:var(--accent);"></i>タッチパネル / SCADA</h5>
+          <h3 class="h5 fw-bold mb-3" style="color:var(--primary);"><i class="fas fa-desktop me-2" aria-hidden="true" style="color:var(--accent);"></i>タッチパネル / SCADA</h3>
           <div>
             <span class="skill-tag m-1">三菱 GOT-A900</span>
             <span class="skill-tag m-1">GOT1000</span>
@@ -160,7 +173,7 @@
             <span class="skill-tag m-1">Wonderware InTouch</span>
             <span class="skill-tag m-1">SIEMENS WinCC</span>
           </div>
-          <h5 class="fw-bold mb-3 mt-4" style="color:var(--primary);"><i class="fas fa-network-wired me-2" style="color:var(--accent);"></i>産業用ネットワーク</h5>
+          <h3 class="h5 fw-bold mb-3 mt-4" style="color:var(--primary);"><i class="fas fa-network-wired me-2" aria-hidden="true" style="color:var(--accent);"></i>産業用ネットワーク</h3>
           <div>
             <span class="skill-tag m-1">MELSECNET</span>
             <span class="skill-tag m-1">CC-Link IE Field</span>
@@ -174,11 +187,11 @@
       <!-- 開発ツール・ライセンス -->
       <div class="col-lg-6">
         <div class="bg-white p-4 rounded shadow-sm h-100">
-          <h5 class="fw-bold mb-3" style="color:var(--primary);"><i class="fas fa-key me-2" style="color:var(--accent);"></i>ライセンス保有開発ツール</h5>
+          <h3 class="h5 fw-bold mb-3" style="color:var(--primary);"><i class="fas fa-key me-2" aria-hidden="true" style="color:var(--accent);"></i>ライセンス保有開発ツール</h3>
           <ul class="small text-muted list-unstyled">
-            <li class="mb-2"><i class="fas fa-check me-2" style="color:var(--accent);"></i>三菱電機: MELSOFT iQ Works Version2 サイトライセンス(SW2DND-IQWK-JC)</li>
-            <li class="mb-2"><i class="fas fa-check me-2" style="color:var(--accent);"></i>オムロン: Sysmac Studio スタンダードエディション (SYSMAC-SE201L)</li>
-            <li class="mb-2"><i class="fas fa-check me-2" style="color:var(--accent);"></i>キーエンス: KV STUDIO Ver. 11 (KV-H11J) / VT STUDIO Ver. 8 (VT-H8J)</li>
+            <li class="mb-2"><i class="fas fa-check me-2" aria-hidden="true" style="color:var(--accent);"></i>三菱電機: MELSOFT iQ Works Version2 サイトライセンス(SW2DND-IQWK-JC)</li>
+            <li class="mb-2"><i class="fas fa-check me-2" aria-hidden="true" style="color:var(--accent);"></i>オムロン: Sysmac Studio スタンダードエディション (SYSMAC-SE201L)</li>
+            <li class="mb-2"><i class="fas fa-check me-2" aria-hidden="true" style="color:var(--accent);"></i>キーエンス: KV STUDIO Ver. 11 (KV-H11J) / VT STUDIO Ver. 8 (VT-H8J)</li>
           </ul>
         </div>
       </div>
@@ -186,7 +199,7 @@
       <!-- CAD・その他 -->
       <div class="col-lg-6">
         <div class="bg-white p-4 rounded shadow-sm h-100">
-          <h5 class="fw-bold mb-3" style="color:var(--primary);"><i class="fas fa-drafting-compass me-2" style="color:var(--accent);"></i>CAD・その他</h5>
+          <h3 class="h5 fw-bold mb-3" style="color:var(--primary);"><i class="fas fa-drafting-compass me-2" aria-hidden="true" style="color:var(--accent);"></i>CAD・その他</h3>
           <div>
             <span class="skill-tag m-1">WINSTARCAD</span>
             <span class="skill-tag m-1">AutoCAD</span>
@@ -194,12 +207,12 @@
             <span class="skill-tag m-1">防爆仕様 制御盤改造</span>
             <span class="skill-tag m-1">計装制御（横河電機・アズビル）</span>
           </div>
-          <h5 class="fw-bold mb-3 mt-4" style="color:var(--primary);"><i class="fas fa-tasks me-2" style="color:var(--accent);"></i>業務スキル</h5>
+          <h3 class="h5 fw-bold mb-3 mt-4" style="color:var(--primary);"><i class="fas fa-tasks me-2" aria-hidden="true" style="color:var(--accent);"></i>業務スキル</h3>
           <ul class="small text-muted list-unstyled">
-            <li class="mb-1"><i class="fas fa-check me-2" style="color:var(--accent);"></i>仕様検討・制御設計・制御盤改造・画面設計</li>
-            <li class="mb-1"><i class="fas fa-check me-2" style="color:var(--accent);"></i>PLCプログラミング・SCADA/HMI構築・単体/結合テスト</li>
-            <li class="mb-1"><i class="fas fa-check me-2" style="color:var(--accent);"></i>国内外現場での試運転・トラブルシューティング</li>
-            <li class="mb-1"><i class="fas fa-check me-2" style="color:var(--accent);"></i>図解入り手順書・英文試運転マニュアル作成</li>
+            <li class="mb-1"><i class="fas fa-check me-2" aria-hidden="true" style="color:var(--accent);"></i>仕様検討・制御設計・制御盤改造・画面設計</li>
+            <li class="mb-1"><i class="fas fa-check me-2" aria-hidden="true" style="color:var(--accent);"></i>PLCプログラミング・SCADA/HMI構築・単体/結合テスト</li>
+            <li class="mb-1"><i class="fas fa-check me-2" aria-hidden="true" style="color:var(--accent);"></i>国内外現場での試運転・トラブルシューティング</li>
+            <li class="mb-1"><i class="fas fa-check me-2" aria-hidden="true" style="color:var(--accent);"></i>図解入り手順書・英文試運転マニュアル作成</li>
           </ul>
         </div>
       </div>
@@ -211,7 +224,7 @@
 <section class="section">
   <div class="container">
     <div class="text-center mb-5">
-      <div class="section-title">個人所有 <span>開発機材</span></div>
+      <h2 class="section-title">個人所有 <span>開発機材</span></h2>
       <div class="divider mx-auto"></div>
       <p class="section-sub">自宅に実機環境を保有しており、現場前に動作検証が可能です。</p>
     </div>
@@ -219,12 +232,12 @@
 
       <!-- 三菱電機 -->
       <div class="accordion-item border-0 mb-3 rounded shadow-sm overflow-hidden">
-        <h2 class="accordion-header">
+        <h3 class="accordion-header">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#eq-mitsubishi" style="background:var(--light-bg);color:var(--primary);font-weight:700;">
-            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;"><i class="fas fa-microchip" style="font-size:1rem;"></i></div>
+            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;"><i class="fas fa-microchip" aria-hidden="true" style="font-size:1rem;"></i></div>
             三菱電機　<span class="text-muted fw-normal small ms-2">Qシリーズ / iQ-R / iQ-F / L / GOT</span>
           </button>
-        </h2>
+        </h3>
         <div id="eq-mitsubishi" class="accordion-collapse collapse show" data-bs-parent="#equipmentAccordion">
           <div class="accordion-body pt-3">
             <div class="mb-3">
@@ -259,12 +272,12 @@
 
       <!-- オムロン -->
       <div class="accordion-item border-0 mb-3 rounded shadow-sm overflow-hidden">
-        <h2 class="accordion-header">
+        <h3 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eq-omron" style="background:var(--light-bg);color:var(--primary);font-weight:700;">
-            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;background:linear-gradient(135deg,#e83030,#b00);"><i class="fas fa-server" style="font-size:1rem;"></i></div>
+            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;background:linear-gradient(135deg,#e83030,#b00);"><i class="fas fa-server" aria-hidden="true" style="font-size:1rem;"></i></div>
             オムロン　<span class="text-muted fw-normal small ms-2">NJ / NX / CS1</span>
           </button>
-        </h2>
+        </h3>
         <div id="eq-omron" class="accordion-collapse collapse" data-bs-parent="#equipmentAccordion">
           <div class="accordion-body pt-3">
             <div class="mb-3">
@@ -283,12 +296,12 @@
 
       <!-- キーエンス -->
       <div class="accordion-item border-0 mb-3 rounded shadow-sm overflow-hidden">
-        <h2 class="accordion-header">
+        <h3 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eq-keyence" style="background:var(--light-bg);color:var(--primary);font-weight:700;">
-            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;background:linear-gradient(135deg,#0066cc,#004499);"><i class="fas fa-server" style="font-size:1rem;"></i></div>
+            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;background:linear-gradient(135deg,#0066cc,#004499);"><i class="fas fa-server" aria-hidden="true" style="font-size:1rem;"></i></div>
             キーエンス　<span class="text-muted fw-normal small ms-2">KVシリーズ</span>
           </button>
-        </h2>
+        </h3>
         <div id="eq-keyence" class="accordion-collapse collapse" data-bs-parent="#equipmentAccordion">
           <div class="accordion-body pt-3">
             <span class="skill-tag outline m-1">KV-5000</span><span class="skill-tag outline m-1">KV-7500</span>
@@ -301,12 +314,12 @@
 
       <!-- TOYOPUC -->
       <div class="accordion-item border-0 mb-3 rounded shadow-sm overflow-hidden">
-        <h2 class="accordion-header">
+        <h3 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eq-toyopuc" style="background:var(--light-bg);color:var(--primary);font-weight:700;">
-            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;background:linear-gradient(135deg,#555,#333);"><i class="fas fa-microchip" style="font-size:1rem;"></i></div>
+            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;background:linear-gradient(135deg,#555,#333);"><i class="fas fa-microchip" aria-hidden="true" style="font-size:1rem;"></i></div>
             TOYOPUC　<span class="text-muted fw-normal small ms-2">PC3J / PC10 / Plus / PCS-J / Nano</span>
           </button>
-        </h2>
+        </h3>
         <div id="eq-toyopuc" class="accordion-collapse collapse" data-bs-parent="#equipmentAccordion">
           <div class="accordion-body pt-3">
             <div class="mb-3">
@@ -335,12 +348,12 @@
 
       <!-- その他 -->
       <div class="accordion-item border-0 mb-3 rounded shadow-sm overflow-hidden">
-        <h2 class="accordion-header">
+        <h3 class="accordion-header">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#eq-other" style="background:var(--light-bg);color:var(--primary);font-weight:700;">
-            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;background:linear-gradient(135deg,#009999,#006666);"><i class="fas fa-tools" style="font-size:1rem;"></i></div>
+            <div class="feature-icon me-3 flex-shrink-0" style="width:40px;height:40px;background:linear-gradient(135deg,#009999,#006666);"><i class="fas fa-tools" aria-hidden="true" style="font-size:1rem;"></i></div>
             その他　<span class="text-muted fw-normal small ms-2">SIEMENS / WAGO / Weintek / Arduino</span>
           </button>
-        </h2>
+        </h3>
         <div id="eq-other" class="accordion-collapse collapse" data-bs-parent="#equipmentAccordion">
           <div class="accordion-body pt-3">
             <span class="skill-tag outline m-1">SIEMENS S7-1200</span>
@@ -359,42 +372,42 @@
 <section class="section section-alt">
   <div class="container">
     <div class="text-center mb-5">
-      <div class="section-title">趣味・<span>技術的興味</span></div>
+      <h2 class="section-title">趣味・<span>技術的興味</span></h2>
       <div class="divider mx-auto"></div>
     </div>
     <div class="row g-4 justify-content-center">
       <div class="col-md-6 col-lg-3">
         <div class="text-center p-4 bg-white rounded shadow-sm">
-          <i class="fas fa-microchip fa-2x mb-3" style="color:var(--accent);"></i>
-          <h6 class="fw-bold">マイコン・IoT</h6>
+          <i class="fas fa-microchip fa-2x mb-3" aria-hidden="true" style="color:var(--accent);"></i>
+          <h3 class="h6 fw-bold">マイコン・IoT</h3>
           <p class="text-muted small">Arduino・Raspberry Pi・ESP32での制御実験</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="text-center p-4 bg-white rounded shadow-sm">
-          <i class="fas fa-print fa-2x mb-3" style="color:var(--accent);"></i>
-          <h6 class="fw-bold">3Dプリンタ</h6>
+          <i class="fas fa-print fa-2x mb-3" aria-hidden="true" style="color:var(--accent);"></i>
+          <h3 class="h6 fw-bold">3Dプリンタ</h3>
           <p class="text-muted small">Bambu Lab P1S Comboでの3Dモデリング・造形</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="text-center p-4 bg-white rounded shadow-sm">
-          <i class="fas fa-project-diagram fa-2x mb-3" style="color:var(--accent);"></i>
-          <h6 class="fw-bold">基板設計</h6>
+          <i class="fas fa-project-diagram fa-2x mb-3" aria-hidden="true" style="color:var(--accent);"></i>
+          <h3 class="h6 fw-bold">基板設計</h3>
           <p class="text-muted small">KiCadを使った電子回路設計</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-3">
         <div class="text-center p-4 bg-white rounded shadow-sm">
-          <i class="fas fa-pen-nib fa-2x mb-3" style="color:var(--accent);"></i>
-          <h6 class="fw-bold">技術発信</h6>
+          <i class="fas fa-pen-nib fa-2x mb-3" aria-hidden="true" style="color:var(--accent);"></i>
+          <h3 class="h6 fw-bold">技術発信</h3>
           <p class="text-muted small">QiitaでPLC技術記事を定期投稿（PLCタグ投稿数トップクラス）</p>
         </div>
       </div>
     </div>
     <div class="text-center mt-4">
-      <a href="https://qiita.com/fa_yoshinobu" class="btn btn-accent" target="_blank">
-        <i class="fas fa-external-link-alt me-2"></i>Qiita の技術記事を見る
+      <a href="https://qiita.com/fa_yoshinobu" class="btn btn-accent" target="_blank" rel="noopener">
+        <i class="fas fa-external-link-alt me-2" aria-hidden="true"></i>Qiita の技術記事を見る
       </a>
     </div>
   </div>
@@ -404,7 +417,7 @@
   <div class="container">
     <h2>一緒に課題を解決しましょう</h2>
     <p>FAシステムでお困りのことがございましたら、お気軽にご相談ください。</p>
-    <a href="contact.html" class="btn btn-accent btn-lg">お問い合わせはこちら <i class="fas fa-arrow-right ms-1"></i></a>
+    <a href="contact.html" class="btn btn-accent btn-lg">お問い合わせはこちら <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
   </div>
 </section>
 
@@ -415,8 +428,8 @@
         <div class="footer-brand">FA <span>Labo</span></div>
         <p class="small mt-2">フリーランスFAエンジニア よしのぶ</p>
         <div class="mt-3">
-          <a href="https://x.com/fa_yoshinobu" class="social-link" target="_blank"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://qiita.com/fa_yoshinobu" class="social-link" target="_blank"><i class="fas fa-pen-nib"></i></a>
+          <a href="https://x.com/fa_yoshinobu" class="social-link" target="_blank" rel="noopener"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="https://qiita.com/fa_yoshinobu" class="social-link" target="_blank" rel="noopener"><i class="fas fa-pen-nib" aria-hidden="true"></i></a>
         </div>
       </div>
       <div class="col-lg-4">
@@ -434,8 +447,8 @@
       <div class="col-lg-4">
         <div class="text-white-50 small fw-bold mb-2">LINKS</div>
         <ul class="list-unstyled small">
-          <li class="mb-1"><a href="https://qiita.com/fa_yoshinobu" target="_blank"><i class="fas fa-external-link-alt me-1"></i>Qiita 技術記事</a></li>
-          <li class="mb-1"><a href="https://x.com/fa_yoshinobu" target="_blank"><i class="fab fa-x-twitter me-1"></i>Twitter/X</a></li>
+          <li class="mb-1"><a href="https://qiita.com/fa_yoshinobu" target="_blank" rel="noopener"><i class="fas fa-external-link-alt me-1" aria-hidden="true"></i>Qiita 技術記事</a></li>
+          <li class="mb-1"><a href="https://x.com/fa_yoshinobu" target="_blank" rel="noopener"><i class="fab fa-x-twitter me-1" aria-hidden="true"></i>Twitter/X</a></li>
         </ul>
       </div>
     </div>

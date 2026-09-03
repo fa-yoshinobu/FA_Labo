@@ -188,6 +188,7 @@ a:hover {
   font-size: 2rem;
   font-weight: 800;
   color: var(--primary);
+  margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
@@ -241,7 +242,7 @@ a:hover {
   color: #fff;
 }
 
-.feature-card h4 {
+.feature-card h3 {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--primary);
@@ -264,7 +265,8 @@ a:hover {
   box-shadow: 0 8px 25px rgba(0,0,0,0.12);
 }
 
-.service-card h4 {
+.service-card h3 {
+  font-size: 1.5rem;
   color: var(--primary);
   font-weight: 700;
   margin-bottom: 0.75rem;
@@ -325,7 +327,7 @@ a:hover {
   border: 1px solid var(--border);
 }
 
-.work-card h5 {
+.work-card h3 {
   color: var(--primary);
   font-weight: 700;
   font-size: 1rem;
