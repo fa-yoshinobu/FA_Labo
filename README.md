@@ -37,7 +37,7 @@ FA Labo は、フリーランスFAエンジニア「よしのぶ」のポート�
 
 ### 公開アプリ
 
-- FA Labo PLC Console: iOSで公開中のPLC接続確認、監視、書込、記録支援アプリ。Android版は公開準備中
+- FA Labo PLC Console: Android／iOSで公開中のPLC接続確認、監視、書込、記録支援アプリ。[Google Play](https://play.google.com/store/apps/details?id=com.fa_labo.plc_io_checker)／[App Store](https://apps.apple.com/jp/app/fa-labo-plc-console/id6783619471)
 
 ## 技術構成
 
