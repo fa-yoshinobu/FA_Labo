@@ -3,13 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <title>無料ツール・ライブラリ | FA Labo</title>
   <meta name="description" content="MELSEC SLMP/HostLink/ComputerLink 向けの Python/.NET/C++/Node-RED ライブラリや Factory I/O 連携ゲートウェイ、診断ツールを MIT License で公開。">
   <meta name="google-site-verification" content="TbbvS2LRwy70jLpeVsNq9c6Ckm_LnoCfNuU_Xna5lOI">
   <meta property="og:title" content="無料ツール・ライブラリ | FA Labo">
   <meta property="og:description" content="MELSEC SLMP/HostLink/ComputerLink 向けの Python/.NET/C++/Node-RED ライブラリや Factory I/O 連携ゲートウェイ、診断ツールを MIT License で公開。">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://fa-yoshinobu.github.io/FA_Labo/tools.html">
+  <link rel="canonical" href="https://fa-labo.com/tools.html">
+  <meta property="og:url" content="https://fa-labo.com/tools.html">
+  <meta property="og:site_name" content="FA Labo">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://fa-labo.com/assets/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="FA Labo — フリーランスFAエンジニア よしのぶ">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@fa_yoshinobu">
+  <meta name="twitter:creator" content="@fa_yoshinobu">
   <meta name="robots" content="index,follow">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-43HQKJT0WV"></script>
@@ -20,9 +33,9 @@
 
     gtag('config', 'G-43HQKJT0WV');
   </script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
+  <link rel="preload" href="vendor/fonts/notosansjp/NotoSansJP-400.woff2" as="font" type="font/woff2" crossorigin>
   <link href="css/style.css" rel="stylesheet">
   <script type="application/ld+json">
   {
@@ -30,7 +43,7 @@
     "@type": "ProfessionalService",
     "name": "FA Labo",
     "description": "FA Labo は 20 年超のフリーランスFAエンジニア。PLC プログラミング、制御盤改造、HMI/SCADA 構築、試運転支援、インボイス請求まで一貫対応します。",
-    "url": "https://fa-yoshinobu.github.io/FA_Labo/",
+    "url": "https://fa-labo.com/",
     "areaServed": "Japan",
     "sameAs": [
       "https://x.com/fa_yoshinobu",
@@ -44,7 +57,7 @@
 <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
     <a class="navbar-brand" href="index.html">FA <span>Labo</span></a>
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="メニューを開閉">
       <span class="navbar-toggler-icon" style="filter:invert(1)"></span>
     </button>
     <div class="collapse navbar-collapse" id="navMenu">
@@ -52,7 +65,7 @@
         <li class="nav-item"><a class="nav-link" href="index.html">ホーム</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">サービス</a></li>
         <li class="nav-item"><a class="nav-link" href="works.html">実績</a></li>
-        <li class="nav-item"><a class="nav-link active" href="tools.html">無料ツール</a></li>
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="tools.html">無料ツール</a></li>
         <li class="nav-item"><a class="nav-link" href="paid-tools.html">有料ツール</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">プロフィール</a></li>
         <li class="nav-item ms-lg-3">
@@ -65,11 +78,11 @@
 
 <div class="page-header">
   <div class="container">
-    <div class="hero-badge mb-3"><i class="fab fa-github me-2"></i>GitHub で公開中</div>
+    <div class="hero-badge mb-3"><i class="fab fa-github me-2" aria-hidden="true"></i>GitHub で公開中</div>
     <h1>無料ツール・ライブラリ</h1>
     <p>FA現場で役立つツールをMIT Licenseで無料公開しています。商用利用も可能です。</p>
-    <a href="https://github.com/fa-yoshinobu" class="btn btn-accent mt-2" target="_blank">
-      <i class="fab fa-github me-2"></i>GitHubプロフィールを見る
+    <a href="https://github.com/fa-yoshinobu" class="btn btn-accent mt-2" target="_blank" rel="noopener">
+      <i class="fab fa-github me-2" aria-hidden="true"></i>GitHubプロフィールを見る
     </a>
   </div>
 </div>
@@ -79,7 +92,7 @@
   <div class="container">
     <div class="row align-items-center text-center text-lg-start">
       <div class="col-lg-8 text-white">
-        <i class="fas fa-balance-scale me-2" style="color:var(--accent);"></i>
+        <i class="fas fa-balance-scale me-2" aria-hidden="true" style="color:var(--accent);"></i>
         全ツール・ライブラリは <strong>MIT License</strong> で公開しています。個人・商用問わず無料で自由にご利用いただけます。
       </div>
       <div class="col-lg-4 text-center mt-3 mt-lg-0">
@@ -95,7 +108,7 @@
 <section class="section">
   <div class="container">
     <div class="mb-5">
-      <div class="section-title"><i class="fas fa-plug me-2" style="color:var(--accent);"></i>PLC <span>通信ライブラリ</span></div>
+      <h2 class="section-title"><i class="fas fa-plug me-2" aria-hidden="true" style="color:var(--accent);"></i>PLC <span>通信ライブラリ</span></h2>
       <div class="divider"></div>
       <p class="text-muted">Python・C#（.NET）・C++・Rust・Node-RED で使えるPLC通信ライブラリ。自動化スクリプトやWindowsアプリからPLCと直接通信できます。</p>
     </div>
@@ -105,19 +118,19 @@
         <div class="work-card h-100">
           <div class="d-flex align-items-start gap-3">
             <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;">
-              <i class="fas fa-book-open" style="font-size:1.2rem;"></i>
+              <i class="fas fa-book-open" aria-hidden="true" style="font-size:1.2rem;"></i>
             </div>
             <div>
               <span class="industry-badge">Documentation</span>
-              <h5>PLC通信ライブラリまとめサイト</h5>
+              <h3 class="h5">PLC通信ライブラリまとめサイト</h3>
               <p class="text-muted small">自作PLC通信ライブラリのドキュメント・対応プロトコル・使い方をまとめたサイトです。</p>
               <div class="mb-3">
                 <span class="skill-tag outline">PLC通信</span>
                 <span class="skill-tag outline">ドキュメント</span>
                 <span class="skill-tag outline">まとめサイト</span>
               </div>
-              <a href="https://fa-yoshinobu.github.io/plc-comm-docs-site/" class="btn btn-sm btn-accent" target="_blank">
-                <i class="fas fa-arrow-up-right-from-square me-1"></i>まとめサイトを見る
+              <a href="https://fa-yoshinobu.github.io/plc-comm-docs-site/" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+                <i class="fas fa-arrow-up-right-from-square me-1" aria-hidden="true"></i>まとめサイトを見る
               </a>
             </div>
           </div>
@@ -126,218 +139,218 @@
     </div>
 
     <!-- SLMP (三菱) -->
-    <h5 class="fw-bold mb-3" style="color:var(--primary);">
+    <h3 class="h5 fw-bold mb-3" style="color:var(--primary);">
       <span class="industry-badge" style="font-size:0.85rem;">三菱 MELSEC</span>
       SLMP通信ライブラリ
-    </h5>
+    </h3>
     <div class="row g-4 mb-5">
       <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
-          <h5><i class="fab fa-python me-2" style="color:#3776ab;"></i>plc-comm-slmp-python</h5>
+          <h4 class="h5"><i class="fab fa-python me-2" aria-hidden="true" style="color:#3776ab;"></i>plc-comm-slmp-python</h4>
           <p class="text-muted small">Mitsubishi MELSEC iQ-R/Q シリーズ向け高性能・厳密型 Python クライアント。</p>
           <div class="mb-3">
             <span class="skill-tag outline">Python</span>
             <span class="skill-tag outline">SLMP</span>
             <span class="skill-tag outline">iQ-R/Q</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-slmp-python" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-slmp-python" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
-          <h5><i class="fas fa-code me-2" style="color:#512bd4;"></i>plc-comm-slmp-dotnet</h5>
+          <h4 class="h5"><i class="fas fa-code me-2" aria-hidden="true" style="color:#512bd4;"></i>plc-comm-slmp-dotnet</h4>
           <p class="text-muted small">Mitsubishi iQ-R/Q シリーズ向け .NET 実装。C# アプリケーションから簡単に利用可能。</p>
           <div class="mb-3">
             <span class="skill-tag outline">C#</span>
             <span class="skill-tag outline">.NET</span>
             <span class="skill-tag outline">SLMP</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-slmp-dotnet" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-slmp-dotnet" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
-          <h5><i class="fas fa-microchip me-2" style="color:#00599c;"></i>plc-comm-slmp-cpp-minimal</h5>
+          <h4 class="h5"><i class="fas fa-microchip me-2" aria-hidden="true" style="color:#00599c;"></i>plc-comm-slmp-cpp-minimal</h4>
           <p class="text-muted small">組み込みシステム向けの最小限 C++ SLMP 実装。リソース制約のある環境でも動作。</p>
           <div class="mb-3">
             <span class="skill-tag outline">C++</span>
             <span class="skill-tag outline">組み込み</span>
             <span class="skill-tag outline">軽量</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-slmp-cpp-minimal" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-slmp-cpp-minimal" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
-          <h5><i class="fab fa-node-js me-2" style="color:#83cd29;"></i>node-red-contrib-plc-comm-slmp</h5>
+          <h4 class="h5"><i class="fab fa-node-js me-2" aria-hidden="true" style="color:#83cd29;"></i>node-red-contrib-plc-comm-slmp</h4>
           <p class="text-muted small">Node-RED から Mitsubishi MELSEC iQ-R/Q シリーズへ SLMP 通信できるノード。</p>
           <div class="mb-3">
             <span class="skill-tag outline">Node-RED</span>
             <span class="skill-tag outline">SLMP</span>
             <span class="skill-tag outline">iQ-R/Q</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/node-red-contrib-plc-comm-slmp" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/node-red-contrib-plc-comm-slmp" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
-          <h5><i class="fab fa-rust me-2" style="color:#ce412b;"></i>plc-comm-slmp-rust</h5>
+          <h4 class="h5"><i class="fab fa-rust me-2" aria-hidden="true" style="color:#ce412b;"></i>plc-comm-slmp-rust</h4>
           <p class="text-muted small">Mitsubishi MELSEC 向けの非同期 Rust SLMP クライアント。Binary 3E/4E の TCP/UDP 通信に対応。</p>
           <div class="mb-3">
             <span class="skill-tag outline">Rust</span>
             <span class="skill-tag outline">SLMP</span>
             <span class="skill-tag outline">TCP/UDP</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-slmp-rust" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-slmp-rust" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
     </div>
 
     <!-- MC Protocol Serial (三菱) -->
-    <h5 class="fw-bold mb-3" style="color:var(--primary);">
+    <h3 class="h5 fw-bold mb-3" style="color:var(--primary);">
       <span class="industry-badge" style="font-size:0.85rem;">三菱 MELSEC</span>
       MCプロトコル シリアル通信ライブラリ
-    </h5>
+    </h3>
     <div class="row g-4 mb-5">
       <div class="col-md-4">
         <div class="work-card h-100">
-          <h5><i class="fas fa-microchip me-2" style="color:#00599c;"></i>plc-comm-mcprotocol-serial-cpp</h5>
+          <h4 class="h5"><i class="fas fa-microchip me-2" aria-hidden="true" style="color:#00599c;"></i>plc-comm-mcprotocol-serial-cpp</h4>
           <p class="text-muted small">RS-232C/RS-485 経由の MELSEC MC プロトコル通信に対応した C++ ライブラリ。MCUファームウェアやホスト側ツールで利用可能。</p>
           <div class="mb-3">
             <span class="skill-tag outline">C++</span>
             <span class="skill-tag outline">MC Protocol</span>
             <span class="skill-tag outline">RS-232C/RS-485</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-mcprotocol-serial-cpp" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-mcprotocol-serial-cpp" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
     </div>
 
     <!-- Host Link (キーエンス) -->
-    <h5 class="fw-bold mb-3" style="color:var(--primary);">
+    <h3 class="h5 fw-bold mb-3" style="color:var(--primary);">
       <span class="industry-badge" style="font-size:0.85rem;">KEYENCE KV</span>
       Host Link通信ライブラリ
-    </h5>
+    </h3>
     <div class="row g-4 mb-5">
       <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
-          <h5><i class="fab fa-python me-2" style="color:#3776ab;"></i>plc-comm-hostlink-python</h5>
+          <h4 class="h5"><i class="fab fa-python me-2" aria-hidden="true" style="color:#3776ab;"></i>plc-comm-hostlink-python</h4>
           <p class="text-muted small">KEYENCE KV シリーズ用 Python Host Link クライアント。</p>
           <div class="mb-3">
             <span class="skill-tag outline">Python</span>
             <span class="skill-tag outline">KEYENCE KV</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-hostlink-python" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-hostlink-python" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
-          <h5><i class="fas fa-code me-2" style="color:#512bd4;"></i>plc-comm-hostlink-dotnet</h5>
+          <h4 class="h5"><i class="fas fa-code me-2" aria-hidden="true" style="color:#512bd4;"></i>plc-comm-hostlink-dotnet</h4>
           <p class="text-muted small">KEYENCE KV シリーズ用 .NET 9.0 クライアント。C# から簡単にKV通信が可能。</p>
           <div class="mb-3">
             <span class="skill-tag outline">C#</span>
             <span class="skill-tag outline">.NET 9</span>
             <span class="skill-tag outline">KEYENCE KV</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-hostlink-dotnet" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-hostlink-dotnet" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
-          <h5><i class="fab fa-node-js me-2" style="color:#83cd29;"></i>node-red-contrib-plc-comm-kvhostlink</h5>
+          <h4 class="h5"><i class="fab fa-node-js me-2" aria-hidden="true" style="color:#83cd29;"></i>node-red-contrib-plc-comm-kvhostlink</h4>
           <p class="text-muted small">Node-RED から KEYENCE KV シリーズへ Host Link 通信できるノード。</p>
           <div class="mb-3">
             <span class="skill-tag outline">Node-RED</span>
             <span class="skill-tag outline">KEYENCE KV</span>
             <span class="skill-tag outline">Host Link</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/node-red-contrib-plc-comm-kvhostlink" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/node-red-contrib-plc-comm-kvhostlink" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
       <div class="col-lg-3 col-md-6">
         <div class="work-card h-100">
-          <h5><i class="fab fa-rust me-2" style="color:#ce412b;"></i>plc-comm-hostlink-rust</h5>
+          <h4 class="h5"><i class="fab fa-rust me-2" aria-hidden="true" style="color:#ce412b;"></i>plc-comm-hostlink-rust</h4>
           <p class="text-muted small">KEYENCE KV シリーズ向けの非同期 Rust Host Link クライアント。TCP/UDP 通信と型付き read/write に対応。</p>
           <div class="mb-3">
             <span class="skill-tag outline">Rust</span>
             <span class="skill-tag outline">Host Link</span>
             <span class="skill-tag outline">KEYENCE KV</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-hostlink-rust" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-hostlink-rust" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
     </div>
 
     <!-- ComputerLink (JTEKT) -->
-    <h5 class="fw-bold mb-3" style="color:var(--primary);">
+    <h3 class="h5 fw-bold mb-3" style="color:var(--primary);">
       <span class="industry-badge" style="font-size:0.85rem;">JTEKT TOYOPUC</span>
       ComputerLink通信ライブラリ
-    </h5>
+    </h3>
     <div class="row g-4">
       <div class="col-md-4">
         <div class="work-card h-100">
-          <h5><i class="fab fa-python me-2" style="color:#3776ab;"></i>plc-comm-computerlink-python</h5>
+          <h4 class="h5"><i class="fab fa-python me-2" aria-hidden="true" style="color:#3776ab;"></i>plc-comm-computerlink-python</h4>
           <p class="text-muted small">JTEKT TOYOPUC 用 Python クライアント。</p>
           <div class="mb-3">
             <span class="skill-tag outline">Python</span>
             <span class="skill-tag outline">TOYOPUC</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-computerlink-python" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-computerlink-python" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="work-card h-100">
-          <h5><i class="fas fa-code me-2" style="color:#512bd4;"></i>plc-comm-computerlink-dotnet</h5>
+          <h4 class="h5"><i class="fas fa-code me-2" aria-hidden="true" style="color:#512bd4;"></i>plc-comm-computerlink-dotnet</h4>
           <p class="text-muted small">JTEKT TOYOPUC 用 .NET ライブラリ。</p>
           <div class="mb-3">
             <span class="skill-tag outline">C#</span>
             <span class="skill-tag outline">.NET</span>
             <span class="skill-tag outline">TOYOPUC</span>
           </div>
-          <a href="https://github.com/fa-yoshinobu/plc-comm-computerlink-dotnet" class="btn btn-sm btn-accent" target="_blank">
-            <i class="fab fa-github me-1"></i>GitHub
+          <a href="https://github.com/fa-yoshinobu/plc-comm-computerlink-dotnet" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+            <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
           </a>
         </div>
       </div>
     </div>
 
     <!-- Factory I/O Gateway -->
-    <h5 class="fw-bold mt-5 mb-3" style="color:var(--primary);">
+    <h3 class="h5 fw-bold mt-5 mb-3" style="color:var(--primary);">
       <span class="industry-badge" style="font-size:0.85rem;">Factory I/O</span>
       PLC連携ゲートウェイ
-    </h5>
+    </h3>
     <div class="row g-4">
       <div class="col-lg-6 col-md-8">
         <div class="work-card h-100">
           <div class="d-flex align-items-start gap-3">
             <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;">
-              <i class="fas fa-right-left" style="font-size:1.2rem;"></i>
+              <i class="fas fa-right-left" aria-hidden="true" style="font-size:1.2rem;"></i>
             </div>
             <div>
               <span class="industry-badge">MELSEC / KEYENCE</span>
-              <h5>Factory I/O SLMP / Host Link Gateway</h5>
+              <h4 class="h5">Factory I/O SLMP / Host Link Gateway</h4>
               <p class="text-muted small">Factory I/O の Modbus TCP/IP Client と、MELSEC SLMP または KEYENCE Host Link 対応PLCを中継する Windows ゲートウェイ。</p>
               <div class="mb-3">
                 <span class="skill-tag outline">Windows</span>
@@ -345,8 +358,8 @@
                 <span class="skill-tag outline">Modbus TCP</span>
                 <span class="skill-tag outline">SLMP / Host Link</span>
               </div>
-              <a href="https://github.com/fa-yoshinobu/factoryio-slmp-hostlink-gateway" class="btn btn-sm btn-accent" target="_blank">
-                <i class="fab fa-github me-1"></i>GitHub
+              <a href="https://github.com/fa-yoshinobu/factoryio-slmp-hostlink-gateway" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+                <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
               </a>
             </div>
           </div>
@@ -361,7 +374,7 @@
 <section class="section section-alt">
   <div class="container">
     <div class="mb-5">
-      <div class="section-title"><i class="fas fa-chart-line me-2" style="color:var(--accent);"></i>PLC <span>監視・分析ツール</span></div>
+      <h2 class="section-title"><i class="fas fa-chart-line me-2" aria-hidden="true" style="color:var(--accent);"></i>PLC <span>監視・分析ツール</span></h2>
       <div class="divider"></div>
       <p class="text-muted">リアルタイム監視やデータ分析に使えるツール群。</p>
     </div>
@@ -370,19 +383,19 @@
         <div class="work-card h-100">
           <div class="d-flex align-items-start gap-3">
             <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;">
-              <i class="fas fa-wave-square" style="font-size:1.2rem;"></i>
+              <i class="fas fa-wave-square" aria-hidden="true" style="font-size:1.2rem;"></i>
             </div>
             <div>
               <span class="industry-badge">MELSEC / KEYENCE / TOYOPUC</span>
-              <h5>PLC Scope</h5>
+              <h4 class="h5">PLC Scope</h4>
               <p class="text-muted small">MELSEC SLMP・KEYENCE Host Link・TOYOPUC Computer Link に対応した Windows PLC 監視・デバイス書込ツール。</p>
               <div class="mb-3">
                 <span class="skill-tag outline">Windows</span>
                 <span class="skill-tag outline">.NET 9</span>
                 <span class="skill-tag outline">監視・書込</span>
               </div>
-              <a href="https://github.com/fa-yoshinobu/plc-scope-dotnet" class="btn btn-sm btn-accent" target="_blank">
-                <i class="fab fa-github me-1"></i>GitHub
+              <a href="https://github.com/fa-yoshinobu/plc-scope-dotnet" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+                <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
               </a>
             </div>
           </div>
@@ -392,19 +405,19 @@
         <div class="work-card h-100">
           <div class="d-flex align-items-start gap-3">
             <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;background:linear-gradient(135deg,#e83030,#b00);">
-              <i class="fas fa-eye" style="font-size:1.2rem;"></i>
+              <i class="fas fa-eye" aria-hidden="true" style="font-size:1.2rem;"></i>
             </div>
             <div>
               <span class="industry-badge">OMRON</span>
-              <h5>SysmacVariableBackupViewer</h5>
+              <h4 class="h5">SysmacVariableBackupViewer</h4>
               <p class="text-muted small">Sysmac Studio の XML バックアップファイルを読み込み、変数一覧を見やすく表示・分析できるビューアー。</p>
               <div class="mb-3">
                 <span class="skill-tag outline">OMRON</span>
                 <span class="skill-tag outline">Sysmac Studio</span>
                 <span class="skill-tag outline">XML解析</span>
               </div>
-              <a href="https://github.com/fa-yoshinobu/SysmacVariableBackupViewer" class="btn btn-sm btn-accent" target="_blank">
-                <i class="fab fa-github me-1"></i>GitHub
+              <a href="https://github.com/fa-yoshinobu/SysmacVariableBackupViewer" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+                <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
               </a>
             </div>
           </div>
@@ -414,19 +427,19 @@
         <div class="work-card h-100">
           <div class="d-flex align-items-start gap-3">
             <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;background:linear-gradient(135deg,#e83030,#b00);">
-              <i class="fas fa-chart-area" style="font-size:1.2rem;"></i>
+              <i class="fas fa-chart-area" aria-hidden="true" style="font-size:1.2rem;"></i>
             </div>
             <div>
               <span class="industry-badge">OMRON</span>
-              <h5>SysmacDataTraceViewer</h5>
+              <h4 class="h5">SysmacDataTraceViewer</h4>
               <p class="text-muted small">Sysmac Studio の Data Trace CSV ファイルを読み込み、グラフ表示・分析が可能なビューアー。</p>
               <div class="mb-3">
                 <span class="skill-tag outline">OMRON</span>
                 <span class="skill-tag outline">Data Trace</span>
                 <span class="skill-tag outline">CSV分析</span>
               </div>
-              <a href="https://github.com/fa-yoshinobu/SysmacDataTraceViewer" class="btn btn-sm btn-accent" target="_blank">
-                <i class="fab fa-github me-1"></i>GitHub
+              <a href="https://github.com/fa-yoshinobu/SysmacDataTraceViewer" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+                <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
               </a>
             </div>
           </div>
@@ -440,7 +453,7 @@
 <section class="section">
   <div class="container">
     <div class="mb-5">
-      <div class="section-title"><i class="fab fa-windows me-2" style="color:var(--accent);"></i>Windows <span>ユーティリティ</span></div>
+      <h2 class="section-title"><i class="fab fa-windows me-2" aria-hidden="true" style="color:var(--accent);"></i>Windows <span>ユーティリティ</span></h2>
       <div class="divider"></div>
       <p class="text-muted">FA業務・日常の開発作業を効率化するWindowsデスクトップアプリ。</p>
     </div>
@@ -449,17 +462,17 @@
         <div class="work-card h-100">
           <div class="text-center mb-3">
             <div class="feature-icon mx-auto" style="width:60px;height:60px;">
-              <i class="fas fa-file-pdf" style="font-size:1.4rem;"></i>
+              <i class="fas fa-file-pdf" aria-hidden="true" style="font-size:1.4rem;"></i>
             </div>
           </div>
-          <h5 class="text-center">PDF_Title_to_Filename</h5>
+          <h4 class="h5 text-center">PDF_Title_to_Filename</h4>
           <div class="text-center mb-2">
             <span class="skill-tag accent">⭐ 70+ Stars</span>
           </div>
           <p class="text-muted small text-center">PDFのメタデータからタイトルを自動抽出してファイル名を変更する軽量Windowsアプリ。大量のPDFファイルを効率的に整理できます。</p>
           <div class="text-center">
-            <a href="https://github.com/fa-yoshinobu/PDF_Title_to_Filename" class="btn btn-sm btn-accent" target="_blank">
-              <i class="fab fa-github me-1"></i>GitHub
+            <a href="https://github.com/fa-yoshinobu/PDF_Title_to_Filename" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+              <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
             </a>
           </div>
         </div>
@@ -468,14 +481,14 @@
         <div class="work-card h-100">
           <div class="text-center mb-3">
             <div class="feature-icon mx-auto" style="width:60px;height:60px;">
-              <i class="fas fa-network-wired" style="font-size:1.4rem;"></i>
+              <i class="fas fa-network-wired" aria-hidden="true" style="font-size:1.4rem;"></i>
             </div>
           </div>
-          <h5 class="text-center">Network_Preset_Switcher</h5>
+          <h4 class="h5 text-center">Network_Preset_Switcher</h4>
           <p class="text-muted small text-center">複数のネットワーク構成（IPアドレス等）を保存し、ワンクリックで切り替えできるWindowsデスクトップアプリ。現場ごとに異なるネットワーク環境への接続を効率化します。</p>
           <div class="text-center">
-            <a href="https://github.com/fa-yoshinobu/Network_Preset_Switcher" class="btn btn-sm btn-accent" target="_blank">
-              <i class="fab fa-github me-1"></i>GitHub
+            <a href="https://github.com/fa-yoshinobu/Network_Preset_Switcher" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+              <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
             </a>
           </div>
         </div>
@@ -489,8 +502,8 @@
   <div class="container">
     <h2>その他のリポジトリもチェック</h2>
     <p>上記以外にもリファレンス・サンプルコードなど多数公開しています。<br>スターやフォークも大歓迎です！</p>
-    <a href="https://github.com/fa-yoshinobu" class="btn btn-accent btn-lg" target="_blank">
-      <i class="fab fa-github me-2"></i>GitHub プロフィールを見る
+    <a href="https://github.com/fa-yoshinobu" class="btn btn-accent btn-lg" target="_blank" rel="noopener">
+      <i class="fab fa-github me-2" aria-hidden="true"></i>GitHub プロフィールを見る
     </a>
   </div>
 </section>
@@ -500,11 +513,11 @@
     <div class="row gy-4">
       <div class="col-lg-4">
         <div class="footer-brand">FA <span>Labo</span></div>
-        <p class="small mt-2">フリーランスFAエンジニア よしのぶ</p>
+        <p class="small mt-2">フリーランスFAエンジニア よしのぶ<br>PLC・制御盤改造・HMI/SCADAの専門家</p>
         <div class="mt-3">
-          <a href="https://x.com/fa_yoshinobu" class="social-link" target="_blank"><i class="fab fa-x-twitter"></i></a>
-          <a href="https://qiita.com/fa_yoshinobu" class="social-link" target="_blank"><i class="fas fa-pen-nib"></i></a>
-          <a href="https://github.com/fa-yoshinobu" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/fa_yoshinobu" class="social-link" target="_blank" rel="noopener" title="Twitter/X" aria-label="Twitter/X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+          <a href="https://qiita.com/fa_yoshinobu" class="social-link" target="_blank" rel="noopener" title="Qiita" aria-label="Qiita"><i class="fas fa-pen-nib" aria-hidden="true"></i></a>
+          <a href="https://github.com/fa-yoshinobu" class="social-link" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
         </div>
       </div>
       <div class="col-lg-4">
@@ -522,17 +535,17 @@
       <div class="col-lg-4">
         <div class="text-white-50 small fw-bold mb-2">LINKS</div>
         <ul class="list-unstyled small">
-          <li class="mb-1"><a href="https://github.com/fa-yoshinobu" target="_blank"><i class="fab fa-github me-1"></i>GitHub</a></li>
-          <li class="mb-1"><a href="https://qiita.com/fa_yoshinobu" target="_blank"><i class="fas fa-external-link-alt me-1"></i>Qiita 技術記事</a></li>
-          <li class="mb-1"><a href="https://x.com/fa_yoshinobu" target="_blank"><i class="fab fa-x-twitter me-1"></i>Twitter/X</a></li>
+          <li class="mb-1"><a href="https://github.com/fa-yoshinobu" target="_blank" rel="noopener"><i class="fab fa-github me-1" aria-hidden="true"></i>GitHub 無料ツール</a></li>
+          <li class="mb-1"><a href="https://qiita.com/fa_yoshinobu" target="_blank" rel="noopener"><i class="fas fa-external-link-alt me-1" aria-hidden="true"></i>Qiita 技術記事</a></li>
+          <li class="mb-1"><a href="https://x.com/fa_yoshinobu" target="_blank" rel="noopener"><i class="fab fa-x-twitter me-1" aria-hidden="true"></i>Twitter/X</a></li>
         </ul>
       </div>
     </div>
     <hr class="footer-divider">
-    <div class="text-center small">&copy; 2025 FA Labo. All Rights Reserved.</div>
+    <div class="text-center small">&copy; 2025–2026 FA Labo. All Rights Reserved.</div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
