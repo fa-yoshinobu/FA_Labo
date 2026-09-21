@@ -7,10 +7,10 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <title>無料ツール・ライブラリ | FA Labo</title>
-  <meta name="description" content="MELSEC SLMP/HostLink/ComputerLink 向けの Python/.NET/C++/Node-RED ライブラリや Factory I/O 連携ゲートウェイ、診断ツールを MIT License で公開。">
+  <meta name="description" content="MELSEC・KEYENCE KV・TOYOPUC向けPLC通信ライブラリと無料ツールを紹介。用途・言語別の選び方、導入手順、データ収集や監視の使用例から必要なツールを探せます。">
   <meta name="google-site-verification" content="TbbvS2LRwy70jLpeVsNq9c6Ckm_LnoCfNuU_Xna5lOI">
   <meta property="og:title" content="無料ツール・ライブラリ | FA Labo">
-  <meta property="og:description" content="MELSEC SLMP/HostLink/ComputerLink 向けの Python/.NET/C++/Node-RED ライブラリや Factory I/O 連携ゲートウェイ、診断ツールを MIT License で公開。">
+  <meta property="og:description" content="MELSEC・KEYENCE KV・TOYOPUC向けPLC通信ライブラリと無料ツールを紹介。用途・言語別の選び方、導入手順、データ収集や監視の使用例から必要なツールを探せます。">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://fa-labo.com/tools.html">
   <meta property="og:url" content="https://fa-labo.com/tools.html">
@@ -104,6 +104,45 @@
   </div>
 </section>
 
+<!-- 用途別ガイド -->
+<section class="section section-alt" aria-labelledby="tool-guide">
+  <div class="container">
+    <h2 class="section-title" id="tool-guide">用途から選ぶ <span>PLCツール</span></h2>
+    <div class="divider"></div>
+    <p>まず「既存のアプリで確認したい」のか「自分のプログラムに通信機能を組み込みたい」のかを決めると、必要なツールを絞れます。ライブラリは、PLCの通信方式とプログラムを動かす環境の両方に合わせて選びます。</p>
+    <div class="table-responsive">
+      <table class="table align-middle">
+        <caption>目的に応じたツール・実装の選び方</caption>
+        <thead>
+          <tr><th scope="col">やりたいこと</th><th scope="col">候補</th><th scope="col">使い方の例</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">WindowsでPLCの値を確認する</th><td>PLC Scope</td><td>デバイス範囲を監視し、接続設定と読み出した値を確認する。</td></tr>
+          <tr><th scope="row">データ収集スクリプトを作る</th><td>Pythonライブラリ</td><td>PLCから読み出した値を、自作スクリプトで時刻とともにCSVへ保存する。</td></tr>
+          <tr><th scope="row">Windowsアプリに通信を組み込む</th><td>.NETライブラリ</td><td>C#で作成する監視画面や常駐サービスからPLCに接続する。</td></tr>
+          <tr><th scope="row">既存のフローにPLCデータを追加する</th><td>Node-REDノード</td><td>読み出しノードを既存の表示・記録フローにつなぐ。</td></tr>
+          <tr><th scope="row">組み込み機器や常駐処理で使う</th><td>C++・Rustライブラリ</td><td>対応するボードやOS、通信方式を確認してファームウェアや常駐プログラムに組み込む。</td></tr>
+          <tr><th scope="row">Factory I/Oと実機PLCを連携する</th><td>SLMP / Host Link Gateway</td><td>Factory I/OのModbus TCP/IP ClientとPLCの間をWindowsゲートウェイで中継する。</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>通信方式は、三菱MELSECのEthernet通信ならSLMP、KEYENCE KVならHost Link、JTEKT TOYOPUCならComputerLinkが候補です。MELSECのシリアル通信にはMCプロトコル用のC++実装があります。対応機種・通信設定・言語ごとの対応範囲は、それぞれのドキュメントで確認してください。</p>
+    <p><a href="https://plc-comm-docs-site.fa-labo.com/choosing-a-language/">言語と通信方式の比較を見る（英語）</a></p>
+
+    <h3 class="h5 fw-bold mt-5">PLC通信ライブラリの導入手順</h3>
+    <ol>
+      <li class="mb-2"><strong>PLCと接続方式を確認する。</strong> CPU・通信ユニットの型式、使用するプロトコル、Ethernetまたはシリアルの接続条件を確認します。</li>
+      <li class="mb-2"><strong>実行環境に合う実装を選ぶ。</strong> 使用する言語の対応プロトコルを確認し、<a href="https://plc-comm-docs-site.fa-labo.com/package-matrix/">パッケージ一覧（英語）</a>から導入先と手順を開きます。</li>
+      <li class="mb-2"><strong>PLC側とクライアント側の設定を合わせる。</strong> EthernetではIPアドレス・ポート・TCP/UDPなど、シリアルでは通信速度などを、選択したプロトコルの手順に沿って設定します。</li>
+      <li class="mb-2"><strong>少数のデバイスを読み出して確認する。</strong> 各実装のGetting startedにある例を使い、対象機種で有効なデバイスの値を確認してから、自分の収集・表示処理へ組み込みます。</li>
+    </ol>
+
+    <h3 class="h5 fw-bold mt-5">使用例：接続確認からデータ収集へ</h3>
+    <p>Windows PCからPLCの値を記録する場合は、最初にPLC Scopeで接続先とデバイスの値を確認します。次に、同じ通信方式に対応するPythonライブラリのサンプルで読み出しを確認し、時刻と値をCSVへ保存する処理を追加します。収集間隔やデバイス数は実際の応答時間を測りながら調整します。</p>
+    <p class="mb-0">PLC Scopeは接続確認に使うアプリ、Pythonライブラリは収集処理を作るための部品です。<a href="https://plc-comm-docs-site.fa-labo.com/applications/">アプリケーションの紹介（英語）</a>と、下記の各リポジトリから用途に合うものを選べます。</p>
+  </div>
+</section>
+
 <!-- PLC通信ライブラリ -->
 <section class="section">
   <div class="container">
@@ -129,7 +168,7 @@
                 <span class="skill-tag outline">ドキュメント</span>
                 <span class="skill-tag outline">まとめサイト</span>
               </div>
-              <a href="https://fa-yoshinobu.github.io/plc-comm-docs-site/" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+              <a href="https://plc-comm-docs-site.fa-labo.com/" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
                 <i class="fas fa-arrow-up-right-from-square me-1" aria-hidden="true"></i>まとめサイトを見る
               </a>
             </div>
