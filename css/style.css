@@ -180,6 +180,145 @@ a:hover {
   color: #fff;
 }
 
+/* ---- Homepage project consultation ---- */
+.home-page .hero {
+  min-height: auto;
+  padding: 5rem 0;
+}
+
+.home-page .hero h1 {
+  font-size: clamp(1.8rem, 3.1vw, 2.65rem);
+  line-height: 1.5;
+}
+
+.home-page .hero .lead {
+  line-height: 1.9;
+}
+
+.hero-note {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+.hero-scope {
+  padding: 1.75rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 16px;
+}
+
+.hero-scope h2 {
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.hero-scope-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.hero-scope-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+.hero-scope-list strong,
+.hero-scope-list span {
+  display: block;
+}
+
+.hero-scope-list strong {
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.hero-scope-list span {
+  color: rgba(255,255,255,0.75);
+  font-size: 0.85rem;
+}
+
+.home-page [id] {
+  scroll-margin-top: 6rem;
+}
+
+.home-page .service-card h3 {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.process-step {
+  height: 100%;
+  border-top: 2px solid var(--accent);
+  padding-top: 1rem;
+}
+
+.step-number {
+  color: var(--accent);
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.process-step h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.75rem 0;
+}
+
+.process-step p,
+.consultation-panel p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.consultation-panel {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.consultation-panel h3 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.home-page .cta-note {
+  font-size: 0.85rem;
+}
+
+@media (max-width: 767px) {
+  .home-page .hero {
+    padding: 3rem 0;
+  }
+
+  .home-page .hero h1 {
+    font-size: clamp(1.5rem, 7vw, 1.8rem);
+  }
+
+  .hero-actions,
+  .consultation-panel {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .btn,
+  .home-page .cta-banner .btn {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 /* ---- Stats ---- */
 .stats-bar {
   background: var(--primary);

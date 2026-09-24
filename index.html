@@ -6,11 +6,11 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <title>FA Labo | フリーランスFAエンジニア よしのぶ</title>
-  <meta name="description" content="20年以上の実績を持つフリーランスFAエンジニア。PLCプログラミング、制御盤改造、HMI/SCADA構築、試運転対応、インボイス請求まで一貫支援します。">
+  <title>PLC改修・制御盤改造・設備立ち上げ | FA Labo</title>
+  <meta name="description" content="PLCプログラムを改修したい、設備の立ち上げを任せたい。約20年の現場経験を持つFAエンジニアが、設計から制御盤改造・試運転まで支援します。実績と無料のPLC通信ツールも公開中。">
   <meta name="google-site-verification" content="I3V96pr5bjiRHynaYUOaWNHANsCze_mmi7ahkz9OxOU" />
-  <meta property="og:title" content="FA Labo | フリーランスFAエンジニア よしのぶ">
-  <meta property="og:description" content="20年以上の実績。PLC・制御盤・HMI/SCADAの課題を一貫支援し、インボイス対応の請求にも対応します。">
+  <meta property="og:title" content="PLC改修・制御盤改造・設備立ち上げ | FA Labo">
+  <meta property="og:description" content="PLCプログラムを改修したい、設備の立ち上げを任せたい。約20年の現場経験を持つFAエンジニアが、設計から制御盤改造・試運転まで支援します。実績と無料のPLC通信ツールも公開中。">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://fa-labo.com/">
   <meta property="og:url" content="https://fa-labo.com/">
@@ -46,7 +46,7 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "FA Labo",
-    "description": "FA Labo は 20 年超のフリーランスFAエンジニア。PLC プログラミング、制御盤改造、HMI/SCADA 構築、試運転支援、インボイス請求まで一貫対応します。",
+    "description": "PLCプログラムを改修したい、設備の立ち上げを任せたい。約20年の現場経験を持つFAエンジニアが、設計から制御盤改造・試運転まで支援します。実績と無料のPLC通信ツールも公開中。",
     "url": "https://fa-labo.com/",
     "areaServed": "Japan",
     "sameAs": [
@@ -56,7 +56,7 @@
   }
   </script>
 </head>
-<body>
+<body class="home-page">
 
 <!-- ===== Navbar ===== -->
 <nav class="navbar navbar-expand-lg sticky-top">
@@ -74,7 +74,7 @@
         <li class="nav-item"><a class="nav-link" href="paid-tools.html">有料ツール</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">プロフィール</a></li>
         <li class="nav-item ms-lg-3">
-          <a class="nav-link btn btn-accent px-4 py-2" href="contact.html" style="color:#fff;">お問い合わせ</a>
+          <a class="nav-link btn btn-accent px-4 py-2" href="contact.html" style="color:#fff;">案件を相談する</a>
         </li>
       </ul>
     </div>
@@ -87,23 +87,26 @@
     <div class="row align-items-center gy-5">
       <div class="col-lg-7 hero-content">
         <div class="hero-badge"><i class="fas fa-industry me-2" aria-hidden="true"></i>フリーランスFAエンジニア</div>
-        <h1>止まらない生産ラインを、<br><span>確かな技術</span>で支える。</h1>
+        <h1>PLC改修も、<br class="d-sm-none">設備立ち上げも。<br><span>仕様検討から現場まで。</span></h1>
         <p class="lead mt-3 mb-4">
-          自動車・製鉄・医薬品など多業界で20年の実務経験。<br>
-          PLCプログラミングから制御盤改造・HMI/SCADA構築・試運転まで<br>
-          設備開発の一連を一貫対応します。
+          既存設備の動作変更、古いPLCの更新、新しいラインの立ち上げ。<br>
+          約20年のFA実務経験を持つエンジニアが、PLCプログラム・制御盤・HMI/SCADAから現場の試運転まで対応します。
         </p>
-        <div class="d-flex flex-wrap gap-3">
-          <a href="services.html" class="btn btn-accent">サービスを見る <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
-          <a href="contact.html" class="btn btn-outline-white">お問い合わせ</a>
+        <div class="d-flex flex-wrap gap-3 hero-actions">
+          <a href="contact.html" class="btn btn-accent">設備の改修・立ち上げを相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+          <a href="#projects" class="btn btn-outline-white">対応実績を見る</a>
         </div>
+        <p class="hero-note mt-3 mb-0">仕様が固まる前のご相談にも対応。設備の概要と、実現したいことをお聞かせください。</p>
       </div>
-      <div class="col-lg-5 hero-content text-center">
-        <div class="p-4" style="background:rgba(255,255,255,0.05);border-radius:16px;border:1px solid rgba(255,255,255,0.1);">
-          <div class="mb-3">
-            <i class="fas fa-microchip" aria-hidden="true" style="font-size:5rem;color:var(--accent);opacity:0.9;"></i>
-          </div>
-          <div class="small mb-3" style="color:rgba(255,255,255,0.8);">対応可能なPLC</div>
+      <div class="col-lg-5 hero-content">
+        <div class="hero-scope">
+          <h2>必要な工程からご相談ください</h2>
+          <ul class="hero-scope-list">
+            <li><strong>仕様検討・制御設計</strong><span>既設設備の改造、新規設備の制御検討</span></li>
+            <li><strong>プログラム開発・事前検証</strong><span>PLC・操作画面・PCとのデータ連携</span></li>
+            <li><strong>現場試運転・立ち上げ</strong><span>動作調整、トラブル対応、稼働立ち合い</span></li>
+          </ul>
+          <div class="small mb-2 text-white">対応PLC・開発環境</div>
           <div>
             <span class="skill-tag accent m-1">三菱 MELSEC</span>
             <span class="skill-tag m-1">SIEMENS</span>
@@ -128,109 +131,69 @@
       </div>
       <div class="col-6 col-md-3 stat-item">
         <div class="num">6<span style="font-size:1.2rem;">+</span></div>
-        <div class="label">対応PLCメーカー</div>
+        <div class="label">対応PLC・開発環境</div>
       </div>
       <div class="col-6 col-md-3 stat-item">
         <div class="num">4<span style="font-size:1.2rem;">+</span></div>
         <div class="label">対応業界</div>
       </div>
       <div class="col-6 col-md-3 stat-item">
-        <div class="num">自宅<span style="font-size:1rem;">検証環境</span></div>
-        <div class="label">事前動作確認が可能</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== 強み ===== -->
-<section class="section">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">選ばれる <span>3つの強み</span></h2>
-      <div class="divider mx-auto"></div>
-      <p class="section-sub">現場で培った経験と独自の検証環境で、確実な立ち上げを支援します。</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fas fa-tools" aria-hidden="true"></i>
-          </div>
-          <h3>止まれない現場の対応力</h3>
-          <p class="text-muted small">自動車関連設備など停止が許されない生産ラインでの既設改造・試運転対応を多数経験。現場でのトラブルシューティングと迅速な問題解決を強みとしています。</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fas fa-layer-group" aria-hidden="true"></i>
-          </div>
-          <h3>マルチメーカー対応</h3>
-          <p class="text-muted small">三菱・シーメンス・オムロン・キーエンス・JTEKTなど複数メーカーのPLC/SCADAを組み合わせたシステム構築が可能。既存設備を活かした改造・更新案件に柔軟対応します。</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <i class="fas fa-flask" aria-hidden="true"></i>
-          </div>
-          <h3>自宅検証環境による高品質</h3>
-          <p class="text-muted small">自宅に三菱・オムロン・キーエンス等の実機PLC環境を保有。事前に動作検証を行ったうえで現場立ち上げを行うため、短期間での安定稼働を実現します。</p>
-        </div>
+        <div class="num">実機<span style="font-size:1rem;">検証環境</span></div>
+        <div class="label">保有PLCで事前動作確認</div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ===== サービス概要 ===== -->
-<section class="section section-alt">
+<section class="section" id="services">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title">提供 <span>サービス</span></h2>
+      <h2 class="section-title">こんな案件を <span>ご相談ください</span></h2>
       <div class="divider mx-auto"></div>
-      <p class="section-sub">仕様検討から試運転まで、設備開発の全工程に対応します。</p>
+      <p class="section-sub">既存設備の改修から、新規開発・現場での調整まで。必要な作業に合わせて対応範囲をご提案します。</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
         <div class="service-card">
           <div class="icon-wrap"><i class="fas fa-code" aria-hidden="true"></i></div>
-          <h3>PLCプログラミング</h3>
-          <p class="text-muted small">三菱MELSECを中心に複数メーカーのPLCプログラミングに対応。ラダー・ST・FBDで要件に合わせた制御ロジックを構築します。</p>
+          <h3>既存設備の動作を変更したい</h3>
+          <p class="text-muted small">PLCプログラムの改修・機能追加に対応。ラダー・ST・FBDを使い、既存ロジックを確認しながら必要な動作を組み込みます。</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="service-card">
           <div class="icon-wrap"><i class="fas fa-desktop" aria-hidden="true"></i></div>
-          <h3>HMI/SCADA構築</h3>
-          <p class="text-muted small">GOT2000・Wonderware InTouch・WinCCなど多数のHMI/SCADAに対応。直感的な操作と保全性を重視した画面設計を行います。</p>
+          <h3>操作・監視画面を見直したい</h3>
+          <p class="text-muted small">HMI/SCADAの新規構築や既設画面の改修に対応。GOT2000・InTouch・WinCCなどで、操作と保全を考えた画面を設計します。</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="service-card">
           <div class="icon-wrap"><i class="fas fa-drafting-compass" aria-hidden="true"></i></div>
-          <h3>制御盤改造</h3>
-          <p class="text-muted small">電気設計・制御盤改造から配線設計まで対応。防爆仕様や計装制御にも対応実績があります。</p>
+          <h3>設備変更に合わせて盤を改造したい</h3>
+          <p class="text-muted small">電気設計・制御盤改造・配線設計に対応。制御ソフトの変更と合わせてご相談いただけます。防爆仕様や計装制御の設計実績もあります。</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="service-card">
           <div class="icon-wrap"><i class="fas fa-rocket" aria-hidden="true"></i></div>
-          <h3>FAシステム設計・立ち上げ支援</h3>
-          <p class="text-muted small">仕様検討・制御設計から現場での試運転・稼働立ち合いまで一貫対応。国内外問わず対応します。</p>
+          <h3>設備の立ち上げを任せたい</h3>
+          <p class="text-muted small">仕様検討・制御設計から現場試運転、調整、稼働立ち合いまで対応。国内・海外の現場での立ち上げをご相談いただけます。</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="service-card">
           <div class="icon-wrap"><i class="fas fa-sync-alt" aria-hidden="true"></i></div>
-          <h3>旧式PLCリプレース計画</h3>
-          <p class="text-muted small">老朽化した旧式PLCの更新計画・設計・実装まで対応。既存資産を最大限活かした移行を支援します。</p>
+          <h3>古いPLCを更新したい</h3>
+          <p class="text-muted small">旧式PLCの更新計画から設計・実装まで支援。MELSEC-AからQ・iQ-Rへの移行や、MELSECからKEYENCEへのプログラム変換に対応します。</p>
         </div>
       </div>
       <div class="col-md-6 col-lg-4">
         <div class="service-card">
           <div class="icon-wrap"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
-          <h3>制御ネットワーク構築</h3>
-          <p class="text-muted small">CC-Link IE・MELSECNET・MODBUS・FL-NET・DeviceNetなど各種産業用ネットワークの構築・設定に対応します。</p>
+          <h3>PLCのデータをPCで活用したい</h3>
+          <p class="text-muted small">データ取得・監視、帳票出力、データベース連携などのPCソフトを開発。既存設備への後付けや既存ソフトの改修にも対応します。</p>
         </div>
       </div>
     </div>
@@ -240,12 +203,54 @@
   </div>
 </section>
 
-<!-- ===== 実績ハイライト ===== -->
-<section class="section">
+<!-- ===== 強み ===== -->
+<section class="section section-alt">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title">主な <span>実績</span></h2>
+      <h2 class="section-title">現場での手戻りを <span>減らすために</span></h2>
       <div class="divider mx-auto"></div>
+      <p class="section-sub">既設設備を扱ってきた経験と、保有する実機での検証を、改修・立ち上げに活かします。</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-tools" aria-hidden="true"></i>
+          </div>
+          <h3>既設設備の改造・試運転を経験</h3>
+          <p class="text-muted small">自動車生産ラインの既設改造や試運転、医薬品製造装置の制御盤改造を担当。既存の制御を読み解き、現場での調整まで見据えて開発します。</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-layer-group" aria-hidden="true"></i>
+          </div>
+          <h3>メーカーをまたぐ更新にも対応</h3>
+          <p class="text-muted small">三菱・シーメンス・オムロン・キーエンス・JTEKTなどに対応。複数メーカーが混在する設備や、MELSECからKEYENCEへのプログラム変換もご相談いただけます。</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-flask" aria-hidden="true"></i>
+          </div>
+          <h3>実機で事前に確かめる</h3>
+          <p class="text-muted small">三菱・オムロン・キーエンスなどの実機PLCを保有。可能な範囲で通信やプログラムの動作を事前検証し、現場での試運転に備えます。</p>
+          <a href="about.html#equipmentAccordion" class="small fw-bold">保有する検証機材を見る <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 実績ハイライト ===== -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">設備と担当内容で見る <span>実績</span></h2>
+      <div class="divider mx-auto"></div>
+      <p class="section-sub">製鉄・医薬品・自動車・水処理の現場で、制御設計から改造・試運転まで担当してきました。</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6 col-lg-3">
@@ -260,7 +265,7 @@
         <div class="work-card">
           <span class="industry-badge">医薬品</span>
           <h3>医薬品製造装置 制御システム</h3>
-          <p class="text-muted small">医薬品製造装置の制御盤改造・ソフトウェア開発</p>
+          <p class="text-muted small">担当：医薬品製造装置の制御盤改造とPLCソフトウェア開発</p>
           <div><span class="skill-tag outline">MELSEC-Q</span></div>
         </div>
       </div>
@@ -268,7 +273,7 @@
         <div class="work-card">
           <span class="industry-badge">自動車</span>
           <h3>塗装ライン・自動機制御</h3>
-          <p class="text-muted small">ボディ塗装ラインの制御設計・自動機の試運転調整</p>
+          <p class="text-muted small">担当：ボディ塗装ラインの制御設計・既設改造、自動機の試運転調整</p>
           <div><span class="skill-tag outline">JTEKT</span><span class="skill-tag outline">OMRON NJ/NX</span><span class="skill-tag outline">iQ-R</span></div>
         </div>
       </div>
@@ -276,7 +281,7 @@
         <div class="work-card">
           <span class="industry-badge">水処理</span>
           <h3>水処理装置 標準化ソフト開発</h3>
-          <p class="text-muted small">水処理装置向け標準化ソフトウェアを2世代にわたり主担当として開発</p>
+          <p class="text-muted small">担当：標準化ソフトウェアを2世代にわたり主担当として開発。PLCとHMIの設計に対応</p>
           <div><span class="skill-tag outline">MELSEC-Q</span><span class="skill-tag outline">GOT2000</span></div>
         </div>
       </div>
@@ -287,13 +292,61 @@
   </div>
 </section>
 
-<!-- ===== 無料ツール ===== -->
-<section class="section section-alt">
+<!-- ===== ご依頼の流れ ===== -->
+<section class="section section-alt" id="process">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title"><i class="fab fa-github me-2" aria-hidden="true"></i>GitHub で <span>無料公開中</span></h2>
+      <h2 class="section-title">相談から現場までの <span>進め方</span></h2>
       <div class="divider mx-auto"></div>
-      <p class="section-sub">FA現場で役立つライブラリ・ツールをMIT Licenseで公開しています。商用利用も無料です。</p>
+      <p class="section-sub">設備の状況と希望時期を伺い、対応方針・作業範囲・見積もりをご提案します。</p>
+    </div>
+    <ol class="row g-4 list-unstyled process-list">
+      <li class="col-md-6 col-lg-3">
+        <div class="process-step">
+          <span class="step-number" aria-hidden="true">01</span>
+          <h3>設備とご要望を確認</h3>
+          <p>設備の概要、困っていること、希望時期をお知らせください。仕様が固まっていない段階からご相談いただけます。</p>
+        </div>
+      </li>
+      <li class="col-md-6 col-lg-3">
+        <div class="process-step">
+          <span class="step-number" aria-hidden="true">02</span>
+          <h3>対応方針・見積もり</h3>
+          <p>必要な作業と対応範囲を整理し、進め方と見積もりをご提示します。ご依頼前に内容をご確認いただけます。</p>
+        </div>
+      </li>
+      <li class="col-md-6 col-lg-3">
+        <div class="process-step">
+          <span class="step-number" aria-hidden="true">03</span>
+          <h3>設計・開発・事前検証</h3>
+          <p>PLCや操作画面などを開発。保有する実機も活用し、可能な範囲で動作を検証して現場作業に備えます。</p>
+        </div>
+      </li>
+      <li class="col-md-6 col-lg-3">
+        <div class="process-step">
+          <span class="step-number" aria-hidden="true">04</span>
+          <h3>試運転・立ち上げ・納品</h3>
+          <p>ご依頼範囲に応じて現場での調整・稼働確認まで対応。納品後の運用サポートや改善もご相談いただけます。</p>
+        </div>
+      </li>
+    </ol>
+    <div class="consultation-panel mt-5">
+      <div>
+        <h3>まずは、設備の概要と実現したいことから。</h3>
+        <p class="mb-0">PLCのメーカー・型式、変更したい動作、希望時期が分かればお知らせください。未定の項目があっても構いません。</p>
+      </div>
+      <a href="contact.html" class="btn btn-accent flex-shrink-0">案件を相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 無料ツール ===== -->
+<section class="section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">開発したPLCツールを <span>無料公開中</span></h2>
+      <div class="divider mx-auto"></div>
+      <p class="section-sub">通信ライブラリや監視ツールの機能・ソースコードをご覧いただけます。MIT Licenseで公開し、商用利用も無料です。</p>
     </div>
     <div class="row g-4">
       <div class="col-md-4">
@@ -331,7 +384,7 @@
             <i class="fab fa-windows" aria-hidden="true"></i>
           </div>
           <h3>Windowsユーティリティ</h3>
-          <p class="text-muted small">ネットワーク切替ツール・PDF自動リネーム（⭐70+）・MCプロトコルテストパネルなど。</p>
+          <p class="text-muted small">ネットワーク切替ツール・PDF自動リネーム・MCプロトコルテストパネルなど。</p>
           <div class="mt-2">
             <span class="skill-tag outline">Windows</span>
             <span class="skill-tag outline">FA向け</span>
@@ -347,16 +400,19 @@
 </section>
 
 <!-- ===== Qiita技術発信 ===== -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <div class="row align-items-center gy-4">
       <div class="col-lg-6">
-        <h2 class="section-title">Qiita で <span>技術発信中</span></h2>
+        <h2 class="section-title">技術記事と <span>担当者について</span></h2>
         <div class="divider"></div>
-        <p>PLCに関する技術記事を継続的に投稿しています。<strong>QiitaのPLCタグでは投稿数トップクラス</strong>。気づいたPLCの内部仕様や分解記録、実装Tipsなどを発信しています。</p>
-        <a href="https://qiita.com/fa_yoshinobu" class="btn btn-accent" target="_blank" rel="noopener">
-          <i class="fas fa-external-link-alt me-2" aria-hidden="true"></i>Qiita の記事を見る
-        </a>
+        <p>PLCの内部仕様や分解記録、通信処理の実装、トラブル対応についてQiitaで発信しています。対応できる技術や開発への取り組みを、公開記事からもご覧いただけます。</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="about.html" class="btn btn-accent">経歴・対応技術を見る <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+          <a href="https://qiita.com/fa_yoshinobu" class="btn btn-outline-secondary" target="_blank" rel="noopener">
+            <i class="fas fa-external-link-alt me-2" aria-hidden="true"></i>技術記事を見る
+          </a>
+        </div>
       </div>
       <div class="col-lg-6">
         <div class="p-4 rounded" style="background:var(--light-bg);border-left:5px solid #55c500;">
@@ -370,10 +426,9 @@
             </div>
           </div>
           <ul class="list-unstyled small text-muted mb-0">
-            <li class="mb-2"><i class="fas fa-check me-2" aria-hidden="true" style="color:#55c500;"></i>PLCタグ 投稿数トップクラス</li>
+            <li class="mb-2"><i class="fas fa-check me-2" aria-hidden="true" style="color:#55c500;"></i>PLC通信・プログラム実装</li>
             <li class="mb-2"><i class="fas fa-check me-2" aria-hidden="true" style="color:#55c500;"></i>PLC内部仕様・分解記録</li>
             <li class="mb-2"><i class="fas fa-check me-2" aria-hidden="true" style="color:#55c500;"></i>実装Tips・トラブル対応事例</li>
-            <li><i class="fas fa-check me-2" aria-hidden="true" style="color:#55c500;"></i>7,000+ ビュー</li>
           </ul>
         </div>
       </div>
@@ -384,9 +439,10 @@
 <!-- ===== CTA ===== -->
 <section class="cta-banner">
   <div class="container">
-    <h2>FAシステムでお困りですか？</h2>
-    <p>20年の経験と技術で、お客様の自動化・効率化をサポートします。<br>まずはお気軽にご相談ください。</p>
-    <a href="contact.html" class="btn btn-accent btn-lg">お問い合わせはこちら <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+    <h2>その設備の改修、まずは相談から。</h2>
+    <p>PLCプログラムの変更、制御盤の改造、現場での立ち上げ。<br>設備の状況とご要望を伺い、対応範囲と進め方をご提案します。</p>
+    <a href="contact.html" class="btn btn-accent btn-lg">設備の改修・立ち上げを相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+    <p class="cta-note mt-3 mb-0">通常2〜3営業日以内に返信します。インボイス対応の請求書を発行できます。</p>
   </div>
 </section>
 
