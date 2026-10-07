@@ -60,6 +60,7 @@ Start-Process .\paid-tools.html
 リンクやメタ情報を更新した場合は、以下もあわせて確認します。
 
 - `sitemap.xml`
+  - 全7ページの `lastmod` は、各ページの本文・リンクなどを最後に更新した実際の日付に合わせます。サイトマップの再送信日やビルド日には置き換えません。
 - `robots.txt`
 - `CNAME`
 - 各ページの `<title>` / `meta description` / `canonical`
