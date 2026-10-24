@@ -418,7 +418,7 @@
     <div class="mb-5">
       <h2 class="section-title"><i class="fas fa-chart-line me-2" aria-hidden="true" style="color:var(--accent);"></i>PLC <span>監視・分析・シミュレーション</span></h2>
       <div class="divider"></div>
-      <p class="text-muted">リアルタイム監視、データ分析、実設備なしでのPID制御の試験に使えるツール群。</p>
+      <p class="text-muted">リアルタイム監視、データ分析、PLC通信・PID制御の試験やシーケンス制御の練習に使えるツール群。</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6">
@@ -437,6 +437,50 @@
                 <span class="skill-tag outline">監視・書込</span>
               </div>
               <a href="https://github.com/fa-yoshinobu/plc-scope-dotnet" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+                <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" id="sequence-dojo" style="scroll-margin-top:6rem;">
+        <div class="work-card h-100">
+          <div class="d-flex align-items-start gap-3">
+            <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;">
+              <i class="fas fa-gamepad" aria-hidden="true" style="font-size:1.2rem;"></i>
+            </div>
+            <div>
+              <span class="industry-badge">シーケンス制御の練習</span>
+              <h4 class="h5">シーケンス道場 3D</h4>
+              <p class="text-muted small">シーケンス制御作業の実技練習用に、作業盤を3Dで再現したWindowsアプリ。配線やスイッチ操作を練習し、実機PLC・シミュレータと通信して自作ラダーで動きを確認できます。</p>
+              <div class="mb-3">
+                <span class="skill-tag outline">Windows</span>
+                <span class="skill-tag outline">3D作業盤・配線練習</span>
+                <span class="skill-tag outline">SLMP / Host Link / Modbus TCP</span>
+              </div>
+              <a href="https://github.com/fa-yoshinobu/sequence-dojo" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+                <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" id="plc-sim-slmp" style="scroll-margin-top:6rem;">
+        <div class="work-card h-100">
+          <div class="d-flex align-items-start gap-3">
+            <div class="feature-icon flex-shrink-0" style="width:50px;height:50px;">
+              <i class="fas fa-server" aria-hidden="true" style="font-size:1.2rem;"></i>
+            </div>
+            <div>
+              <span class="industry-badge">MELSEC SLMP</span>
+              <h4 class="h5">PLC Sim — SLMP (.NET)</h4>
+              <p class="text-muted small">実機PLCなしでSLMP通信を試験できるWindowsアプリ。TCP・UDP、3E・4E、バイナリ・ASCII形式に対応し、デバイスメモリ・通信電文の確認や異常応答の注入ができます。</p>
+              <div class="mb-3">
+                <span class="skill-tag outline">Windows</span>
+                <span class="skill-tag outline">SLMP応答シミュレータ</span>
+                <span class="skill-tag outline">TCP / UDP</span>
+              </div>
+              <a href="https://github.com/fa-yoshinobu/plc-sim-slmp-dotnet" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
                 <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
               </a>
             </div>
@@ -523,7 +567,23 @@
       <p class="text-muted">FA業務・日常の開発作業を効率化するWindowsデスクトップアプリ。</p>
     </div>
     <div class="row g-4 justify-content-center">
-      <div class="col-md-5">
+      <div class="col-md-4" id="window-rescue" style="scroll-margin-top:6rem;">
+        <div class="work-card h-100">
+          <div class="text-center mb-3">
+            <div class="feature-icon mx-auto" style="width:60px;height:60px;">
+              <i class="fas fa-window-restore" aria-hidden="true" style="font-size:1.4rem;"></i>
+            </div>
+          </div>
+          <h4 class="h5 text-center">Window Rescue</h4>
+          <p class="text-muted small text-center">画面外や極小サイズになったウィンドウを見える位置・サイズへ戻すWindows 11用アプリ。ウィンドウ一覧やショートカット、トレイから操作でき、新しいウィンドウの表示先も指定できます。</p>
+          <div class="text-center">
+            <a href="https://github.com/fa-yoshinobu/window-rescue" class="btn btn-sm btn-accent" target="_blank" rel="noopener">
+              <i class="fab fa-github me-1" aria-hidden="true"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
         <div class="work-card h-100">
           <div class="text-center mb-3">
             <div class="feature-icon mx-auto" style="width:60px;height:60px;">
@@ -539,7 +599,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-4">
         <div class="work-card h-100">
           <div class="text-center mb-3">
             <div class="feature-icon mx-auto" style="width:60px;height:60px;">
