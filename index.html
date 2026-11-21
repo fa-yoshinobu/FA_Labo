@@ -7,10 +7,10 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <title>PLC・PC連携システム開発／MELSEC-F・Aなど古いPLCの更新 | FA Labo</title>
-  <meta name="description" content="PLCとPCをつなぎ、検査結果の自動記録や稼働監視など設備に新しい仕組みをつくります。MELSEC-F（F1・F1J・F2）やMELSEC-Aなど、FX以前の古いシーケンサのリプレースも、現状調査からプログラム変換、試運転まで約20年のFA実務経験で対応します。">
+  <meta name="description" content="PLCとPCをつなぎ、稼働監視やデータ収集など設備に新しい仕組みをつくります。MELSEC-F（F1・F1J・F2）やMELSEC-Aなど、FX以前の古いシーケンサのリプレースも、現状調査からプログラム変換、試運転まで約20年のFA実務経験で対応します。">
   <meta name="google-site-verification" content="I3V96pr5bjiRHynaYUOaWNHANsCze_mmi7ahkz9OxOU" />
   <meta property="og:title" content="PLC・PC連携システム開発／MELSEC-F・Aなど古いPLCの更新 | FA Labo">
-  <meta property="og:description" content="PLCとPCをつなぎ、検査結果の自動記録や稼働監視など設備に新しい仕組みをつくります。MELSEC-F（F1・F1J・F2）やMELSEC-Aなど、FX以前の古いシーケンサのリプレースも、現状調査からプログラム変換、試運転まで約20年のFA実務経験で対応します。">
+  <meta property="og:description" content="PLCとPCをつなぎ、稼働監視やデータ収集など設備に新しい仕組みをつくります。MELSEC-F（F1・F1J・F2）やMELSEC-Aなど、FX以前の古いシーケンサのリプレースも、現状調査からプログラム変換、試運転まで約20年のFA実務経験で対応します。">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://fa-labo.com/">
   <meta property="og:url" content="https://fa-labo.com/">
@@ -90,12 +90,12 @@
         <div class="hero-badge"><i class="fas fa-industry me-2" aria-hidden="true"></i>フリーランスFAエンジニア</div>
         <h1>PLCとPCをつなぎ、<br><span>設備に新しい機能をつくる。</span></h1>
         <p class="lead mt-3 mb-4">
-          検査結果の自動記録や稼働状況の監視など、新作装置にも既存設備にも、現場に合わせた仕組みを作ります。<br>
+          稼働状況の監視やデータ収集など、新作装置にも既存設備にも、現場に合わせた仕組みを作ります。<br>
           仕様が固まる前でも、装置1台・困りごと1つからご相談ください。
         </p>
         <div class="d-flex flex-wrap gap-3 hero-actions">
           <a href="contact.html?category=new-development" class="btn btn-accent">作りたい仕組みを相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
-          <a href="#example" class="btn btn-outline-white">検査記録の例を見る</a>
+          <a href="system-development.html" class="btn btn-outline-white">システム開発の内容を見る</a>
         </div>
         <p class="hero-note mt-3 mb-0">PLC通信ライブラリ（三菱SLMP・キーエンスHost Link・JTEKT）を自作・公開しています。PLC側のプログラムからPC側のソフトまで一貫して対応します。</p>
       </div>
@@ -142,44 +142,6 @@
   </div>
 </section>
 
-<!-- ===== 検査記録の例 ===== -->
-<section class="section" id="example">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="section-title">たとえば、<span>検査結果を製品ごとに自動で残す</span></h2>
-      <div class="divider mx-auto"></div>
-      <p class="section-sub">測定値や合否を手書き・転記していて、後から製品番号で結果を追いにくい。そんな現場向けの構成例です。</p>
-    </div>
-    <ol class="row g-4 list-unstyled process-list">
-      <li class="col-md-4">
-        <div class="process-step">
-          <span class="step-number" aria-hidden="true">01</span>
-          <h3>バーコードを読み取る</h3>
-          <p>検査の前に製品番号を読み取り、どの製品の検査かをPCが把握します。</p>
-        </div>
-      </li>
-      <li class="col-md-4">
-        <div class="process-step">
-          <span class="step-number" aria-hidden="true">02</span>
-          <h3>PLCの合否と測定値をひも付けて保存</h3>
-          <p>検査が終わるとPLCから合否と測定値を取り込み、製品番号と一緒に自動で記録します。転記はいりません。</p>
-        </div>
-      </li>
-      <li class="col-md-4">
-        <div class="process-step">
-          <span class="step-number" aria-hidden="true">03</span>
-          <h3>製品番号で過去の結果を検索</h3>
-          <p>問い合わせや不良調査のときに、製品番号から当時の測定値と合否をすぐに確認できます。</p>
-        </div>
-      </li>
-    </ol>
-    <p class="small text-muted text-center mt-4 mb-0">※ 説明用の構成例で、特定のお客様への導入実績ではありません。</p>
-    <div class="text-center mt-4">
-      <a href="system-development.html" class="btn btn-accent">検査・記録・監視システム開発を見る <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
-    </div>
-  </div>
-</section>
-
 <!-- ===== 相談の入口 ===== -->
 <section class="section section-alt" id="consult">
   <div class="container">
@@ -193,7 +155,7 @@
         <div class="service-card">
           <div class="icon-wrap"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
           <h3>新しい仕組みをつくる</h3>
-          <p class="text-muted small">検査の記録、稼働監視、データ収集などをPLCとPCの連携で実現します。新作装置への組み込み、既存設備への後付け、企業との共同開発に対応します。</p>
+          <p class="text-muted small">稼働監視やデータ収集などをPLCとPCの連携で実現します。新作装置への組み込み、既存設備への後付け、企業との共同開発に対応します。</p>
           <p class="small mb-3"><strong>お知らせいただきたいこと：</strong>今の作業、変えたいこと、対象装置、希望時期</p>
           <a href="contact.html?category=new-development" class="small fw-bold">仕組みを相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
         </div>
