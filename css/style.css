@@ -678,3 +678,70 @@ footer .footer-divider {
     padding: 3rem 0;
   }
 }
+
+/* ---- System development: flow diagram ---- */
+.flow-diagram {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2rem 0;
+}
+
+.flow-node {
+  flex: 1 1 0;
+  max-width: 220px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  text-align: center;
+}
+
+.flow-node.accent {
+  border: 2px solid var(--accent);
+}
+
+.flow-node i {
+  color: var(--accent);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.flow-node strong,
+.flow-node span {
+  display: block;
+}
+
+.flow-node strong {
+  color: var(--primary);
+}
+
+.flow-node span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-top: 0.25rem;
+}
+
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+}
+
+@media (max-width: 767px) {
+  .flow-diagram {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-node {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .flow-arrow i {
+    transform: rotate(90deg);
+  }
+}

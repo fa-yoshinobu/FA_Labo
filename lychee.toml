@@ -11,6 +11,9 @@ exclude = [
   "^https?://(www\\.)?twitter\\.com/",
   # Form POST endpoint - only accepts POST, returns 405 to a link check.
   "^https?://formspree\\.io/",
+  # Own-site absolute URLs (canonical / og:url) 404 until a new page is deployed;
+  # internal pages are linked relatively and still checked as local files.
+  "^https?://fa-labo\\.com/",
 ]
 
 # Don't crawl vendored third-party assets.

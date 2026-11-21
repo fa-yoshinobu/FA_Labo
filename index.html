@@ -6,11 +6,11 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <title>PLC更新・リプレースの相談なら | FA Labo</title>
-  <meta name="description" content="古いPLCの更新・置き換えをご検討ならFA Laboへ。現状調査から移行計画、プログラム変換、制御盤改造、現場の試運転まで対応。約20年のFA実務経験をもとに、既存設備を活かしたPLCリプレースを支援します。">
+  <title>PLC・PC連携システム開発／MELSEC-F・Aなど古いPLCの更新 | FA Labo</title>
+  <meta name="description" content="PLCとPCをつなぎ、検査結果の自動記録や稼働監視など設備に新しい仕組みをつくります。MELSEC-F（F1・F1J・F2）やMELSEC-Aなど、FX以前の古いシーケンサのリプレースも、現状調査からプログラム変換、試運転まで約20年のFA実務経験で対応します。">
   <meta name="google-site-verification" content="I3V96pr5bjiRHynaYUOaWNHANsCze_mmi7ahkz9OxOU" />
-  <meta property="og:title" content="PLC更新・リプレースの相談なら | FA Labo">
-  <meta property="og:description" content="古いPLCの更新・置き換えをご検討ならFA Laboへ。現状調査から移行計画、プログラム変換、制御盤改造、現場の試運転まで対応。約20年のFA実務経験をもとに、既存設備を活かしたPLCリプレースを支援します。">
+  <meta property="og:title" content="PLC・PC連携システム開発／MELSEC-F・Aなど古いPLCの更新 | FA Labo">
+  <meta property="og:description" content="PLCとPCをつなぎ、検査結果の自動記録や稼働監視など設備に新しい仕組みをつくります。MELSEC-F（F1・F1J・F2）やMELSEC-Aなど、FX以前の古いシーケンサのリプレースも、現状調査からプログラム変換、試運転まで約20年のFA実務経験で対応します。">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://fa-labo.com/">
   <meta property="og:url" content="https://fa-labo.com/">
@@ -69,12 +69,13 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link active" aria-current="page" href="./">ホーム</a></li>
         <li class="nav-item"><a class="nav-link" href="services.html">サービス</a></li>
+        <li class="nav-item"><a class="nav-link" href="system-development.html">システム開発</a></li>
         <li class="nav-item"><a class="nav-link" href="works.html">実績</a></li>
         <li class="nav-item"><a class="nav-link" href="tools.html">無料ツール</a></li>
         <li class="nav-item"><a class="nav-link" href="paid-tools.html">有料ツール</a></li>
         <li class="nav-item"><a class="nav-link" href="about.html">プロフィール</a></li>
         <li class="nav-item ms-lg-3">
-          <a class="nav-link btn btn-accent px-4 py-2" href="contact.html?category=plc-renewal" style="color:#fff;">PLC更新を相談する</a>
+          <a class="nav-link btn btn-accent px-4 py-2" href="contact.html?category=new-development" style="color:#fff;">仕組みを相談する</a>
         </li>
       </ul>
     </div>
@@ -87,33 +88,29 @@
     <div class="row align-items-center gy-5">
       <div class="col-lg-7 hero-content">
         <div class="hero-badge"><i class="fas fa-industry me-2" aria-hidden="true"></i>フリーランスFAエンジニア</div>
-        <h1>古いPLCの更新を、<br><span>調査から試運転まで。</span></h1>
+        <h1>PLCとPCをつなぎ、<br><span>設備に新しい機能をつくる。</span></h1>
         <p class="lead mt-3 mb-4">
-          生産終了したPLCの置き換えや、保守を見据えた設備更新をご検討の方へ。<br>
-          約20年のFA実務経験を持つエンジニアが、現状調査・移行計画からプログラム変換、制御盤改造、現場での動作確認まで対応します。
+          検査結果の自動記録や稼働状況の監視など、新作装置にも既存設備にも、現場に合わせた仕組みを作ります。<br>
+          仕様が固まる前でも、装置1台・困りごと1つからご相談ください。
         </p>
         <div class="d-flex flex-wrap gap-3 hero-actions">
-          <a href="contact.html?category=plc-renewal" class="btn btn-accent">PLCの更新・置き換えを相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
-          <a href="#process" class="btn btn-outline-white">更新の進め方を見る</a>
+          <a href="contact.html?category=new-development" class="btn btn-accent">作りたい仕組みを相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+          <a href="#example" class="btn btn-outline-white">検査記録の例を見る</a>
         </div>
-        <p class="hero-note mt-3 mb-0">MELSEC-AからQ・iQ-Rへの移行実績があります。更新先が未定でもご相談いただけます。</p>
+        <p class="hero-note mt-3 mb-0">PLC通信ライブラリ（三菱SLMP・キーエンスHost Link・JTEKT）を自作・公開しています。PLC側のプログラムからPC側のソフトまで一貫して対応します。</p>
       </div>
       <div class="col-lg-5 hero-content">
         <div class="hero-scope">
-          <h2>PLC更新で対応できること</h2>
+          <h2><i class="fas fa-sync-alt me-2" aria-hidden="true"></i>古いシーケンサの置き換えも</h2>
+          <p class="small mt-2 mb-0" style="color:rgba(255,255,255,0.8);">生産終了したPLCの更新を、現状調査から試運転まで対応します。</p>
           <ul class="hero-scope-list">
-            <li><strong>現状調査・移行計画</strong><span>既設PLCと設備の確認、更新方針の検討</span></li>
-            <li><strong>プログラム変換・制御盤改造</strong><span>移行先に合わせた設計・実装・事前検証</span></li>
-            <li><strong>現場切り替え・試運転</strong><span>更新後の動作確認・調整・稼働立ち合い</span></li>
+            <li><strong>MELSEC-F（F1・F1J・F2）</strong><span>FXより前の旧Fシリーズにも対応</span></li>
+            <li><strong>MELSEC-A</strong><span>Q・iQ-Rへの移行実績。Aのマイコンプログラムも対応</span></li>
+            <li><strong>GX DeveloperのST・FBD</strong><span>置き換えが難しいプログラムの更新実績あり</span></li>
           </ul>
-          <div class="small mb-2 text-white">対応PLC・開発環境</div>
-          <div>
-            <span class="skill-tag accent m-1">三菱 MELSEC</span>
-            <span class="skill-tag m-1">SIEMENS</span>
-            <span class="skill-tag m-1">OMRON</span>
-            <span class="skill-tag m-1">KEYENCE</span>
-            <span class="skill-tag m-1">JTEKT</span>
-            <span class="skill-tag m-1">CODESYS</span>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="contact.html?category=plc-renewal" class="btn btn-accent btn-sm">古いPLCの更新を相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+            <a href="services.html#plc-renewal" class="btn btn-outline-white btn-sm">更新の対応内容</a>
           </div>
         </div>
       </div>
@@ -145,20 +142,139 @@
   </div>
 </section>
 
-<!-- ===== サービス概要 ===== -->
-<section class="section" id="services">
+<!-- ===== 検査記録の例 ===== -->
+<section class="section" id="example">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title">PLC更新を中心に、<span>設備の改修まで</span></h2>
+      <h2 class="section-title">たとえば、<span>検査結果を製品ごとに自動で残す</span></h2>
       <div class="divider mx-auto"></div>
-      <p class="section-sub">PLCの置き換えと合わせて、制御盤・操作画面・周辺システムの改修もご相談いただけます。</p>
+      <p class="section-sub">測定値や合否を手書き・転記していて、後から製品番号で結果を追いにくい。そんな現場向けの構成例です。</p>
+    </div>
+    <ol class="row g-4 list-unstyled process-list">
+      <li class="col-md-4">
+        <div class="process-step">
+          <span class="step-number" aria-hidden="true">01</span>
+          <h3>バーコードを読み取る</h3>
+          <p>検査の前に製品番号を読み取り、どの製品の検査かをPCが把握します。</p>
+        </div>
+      </li>
+      <li class="col-md-4">
+        <div class="process-step">
+          <span class="step-number" aria-hidden="true">02</span>
+          <h3>PLCの合否と測定値をひも付けて保存</h3>
+          <p>検査が終わるとPLCから合否と測定値を取り込み、製品番号と一緒に自動で記録します。転記はいりません。</p>
+        </div>
+      </li>
+      <li class="col-md-4">
+        <div class="process-step">
+          <span class="step-number" aria-hidden="true">03</span>
+          <h3>製品番号で過去の結果を検索</h3>
+          <p>問い合わせや不良調査のときに、製品番号から当時の測定値と合否をすぐに確認できます。</p>
+        </div>
+      </li>
+    </ol>
+    <p class="small text-muted text-center mt-4 mb-0">※ 説明用の構成例で、特定のお客様への導入実績ではありません。</p>
+    <div class="text-center mt-4">
+      <a href="system-development.html" class="btn btn-accent">検査・記録・監視システム開発を見る <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 相談の入口 ===== -->
+<section class="section section-alt" id="consult">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">ご相談の <span>入口</span></h2>
+      <div class="divider mx-auto"></div>
+      <p class="section-sub">内容に近いものからお選びください。どれに当たるか分からなくても構いません。</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-card">
+          <div class="icon-wrap"><i class="fas fa-project-diagram" aria-hidden="true"></i></div>
+          <h3>新しい仕組みをつくる</h3>
+          <p class="text-muted small">検査の記録、稼働監視、データ収集などをPLCとPCの連携で実現します。新作装置への組み込み、既存設備への後付け、企業との共同開発に対応します。</p>
+          <p class="small mb-3"><strong>お知らせいただきたいこと：</strong>今の作業、変えたいこと、対象装置、希望時期</p>
+          <a href="contact.html?category=new-development" class="small fw-bold">仕組みを相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <div class="icon-wrap"><i class="fas fa-sync-alt" aria-hidden="true"></i></div>
+          <h3>古いPLCを更新・置き換える</h3>
+          <p class="text-muted small">MELSEC-F（F1・F1J・F2）やMELSEC-Aなど、生産終了したシーケンサの更新に対応します。移行先が未定でもご相談いただけます。</p>
+          <p class="small mb-3"><strong>お知らせいただきたいこと：</strong>メーカー・型式、更新理由、停止可能な時間</p>
+          <a href="contact.html?category=plc-renewal" class="small fw-bold">PLC更新を相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <div class="icon-wrap"><i class="fas fa-eye" aria-hidden="true"></i></div>
+          <h3>既設PLCの動作を調べる</h3>
+          <p class="text-muted small">資料が少ない設備の動作を、範囲を決めて調査します。最初のご相談では対象と目的の確認までを行い、ラダーの読解や現地調査は範囲と成果物を決めたうえで有償でお受けします。</p>
+          <p class="small mb-3"><strong>お知らせいただきたいこと：</strong>対象装置、知りたい動作、資料の有無</p>
+          <a href="contact.html?category=investigation" class="small fw-bold">動作調査を相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 個人への依頼が不安な方へ ===== -->
+<section class="section" id="sole-proprietor">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">個人への依頼が <span>不安な方へ</span></h2>
+      <div class="divider mx-auto"></div>
+      <p class="section-sub">大手重工メーカーと4年にわたり継続してお取引しています。個人事業主への発注で気になりやすい点について、あらかじめお伝えしておきます。</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-user-tie" aria-hidden="true"></i></div>
+          <h3>窓口と開発者が同じ</h3>
+          <p class="text-muted small">ご相談を伺った本人が、設計から現場の試運転まで担当します。伝言で仕様がずれることがありません。</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+          <h3>引き継げる形で残す</h3>
+          <p class="text-muted small">仕様書・構成図・ソースなど納品物の範囲を最初に決め、ほかの技術者でも保守を引き継げる形でお渡しします。</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i></div>
+          <h3>契約・書類・労災保険</h3>
+          <p class="text-muted small">適格請求書発行事業者（インボイス）に登録済みで、インボイス対応の請求書を発行します。秘密保持契約の締結にも対応します。労働者災害補償保険（第二種特別加入）に加入しているので、更新工事や盤改造など現場作業の際に求められる労災加入の確認にもそのまま対応できます。個人への直接発注が難しい場合は、お取引のある商社経由でのご契約も可能です。</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fas fa-tasks" aria-hidden="true"></i></div>
+          <h3>無理な範囲は最初に伝える</h3>
+          <p class="text-muted small">一人で責任を持てない規模や時期のときは、ご相談の段階で正直にお伝えし、範囲を分けた進め方をご提案します。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== サービス概要 ===== -->
+<section class="section section-alt" id="services">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">新しい仕組みづくりから、<span>PLC更新・設備改修まで</span></h2>
+      <div class="divider mx-auto"></div>
+      <p class="section-sub">PLCとPCの連携開発に加えて、古いPLCの置き換え、制御盤・操作画面の改修もご相談いただけます。</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6 col-lg-4">
         <div class="service-card">
           <div class="icon-wrap"><i class="fas fa-sync-alt" aria-hidden="true"></i></div>
           <h3>古いPLCを置き換えたい</h3>
-          <p class="text-muted small">旧式PLCの更新計画から設計・実装まで支援。MELSEC-AからQ・iQ-Rへの移行や、MELSECからKEYENCEへのプログラム変換に対応します。</p>
+          <p class="text-muted small">旧式PLCの更新計画から設計・実装まで支援。MELSEC-F（F1・F1J・F2）やMELSEC-AからQ・iQ-Rへの移行、MELSECからKEYENCEへのプログラム変換に対応します。</p>
           <a href="services.html#plc-renewal" class="small fw-bold">PLC更新の対応内容を見る <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
         </div>
       </div>
@@ -195,17 +311,18 @@
           <div class="icon-wrap"><i class="fas fa-network-wired" aria-hidden="true"></i></div>
           <h3>PLCのデータをPCで活用したい</h3>
           <p class="text-muted small">データ取得・監視、帳票出力、データベース連携などのPCソフトを開発。既存設備への後付けや既存ソフトの改修にも対応します。</p>
+          <a href="system-development.html" class="small fw-bold">システム開発の内容を見る <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
     <div class="text-center mt-5">
-      <a href="services.html#plc-renewal" class="btn btn-accent">PLC更新・設備改修の詳細を見る <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+      <a href="services.html" class="btn btn-accent">サービスの詳細を見る <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
     </div>
   </div>
 </section>
 
 <!-- ===== 強み ===== -->
-<section class="section section-alt">
+<section class="section">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="section-title">現場での手戻りを <span>減らすために</span></h2>
@@ -246,7 +363,7 @@
 </section>
 
 <!-- ===== 実績ハイライト ===== -->
-<section class="section" id="projects">
+<section class="section section-alt" id="projects">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="section-title">設備と担当内容で見る <span>実績</span></h2>
@@ -294,12 +411,12 @@
 </section>
 
 <!-- ===== ご依頼の流れ ===== -->
-<section class="section section-alt" id="process">
+<section class="section" id="process">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title">PLC更新の <span>進め方</span></h2>
+      <h2 class="section-title">古いPLC更新の <span>進め方</span></h2>
       <div class="divider mx-auto"></div>
-      <p class="section-sub">既設設備の状況と更新したい理由を伺い、移行計画・対応範囲・見積もりをご提案します。</p>
+      <p class="section-sub">MELSEC-F（F1・F1J・F2）・MELSEC-Aなど、既設設備の状況と更新したい理由を伺い、移行計画・対応範囲・見積もりをご提案します。</p>
     </div>
     <ol class="row g-4 list-unstyled process-list">
       <li class="col-md-6 col-lg-3">
@@ -327,7 +444,7 @@
         <div class="process-step">
           <span class="step-number" aria-hidden="true">04</span>
           <h3>現場切り替え・試運転</h3>
-          <p>更新後の動作確認・調整を行います。ご依頼範囲に応じて稼働立ち合いまで対応し、納品後の改善もご相談いただけます。</p>
+          <p>更新後の動作確認・調整を行います。ご依頼範囲に応じて稼働立ち合いまで対応し、納品後の改善もご相談いただけます。工事で求められる労災保険（第二種特別加入）にも加入しています。</p>
         </div>
       </li>
     </ol>
@@ -342,7 +459,7 @@
 </section>
 
 <!-- ===== 無料ツール ===== -->
-<section class="section">
+<section class="section section-alt">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="section-title">開発したPLCツールを <span>無料公開中</span></h2>
@@ -402,7 +519,7 @@
 </section>
 
 <!-- ===== Qiita技術発信 ===== -->
-<section class="section section-alt">
+<section class="section">
   <div class="container">
     <div class="row align-items-center gy-4">
       <div class="col-lg-6">
@@ -439,7 +556,7 @@
 </section>
 
 <!-- ===== 学習コンテンツ ===== -->
-<section class="section" id="learning">
+<section class="section section-alt" id="learning">
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="section-title">遊んで学ぶ <span>制御と電気</span></h2>
@@ -473,10 +590,13 @@
 <!-- ===== CTA ===== -->
 <section class="cta-banner">
   <div class="container">
-    <h2>古いPLCの更新、まずは相談から。</h2>
-    <p>生産終了したPLCの置き換え、保守を見据えた設備更新。<br>既存設備の状況を伺い、移行計画と対応範囲をご提案します。</p>
-    <a href="contact.html?category=plc-renewal" class="btn btn-accent btn-lg">PLCの更新・置き換えを相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
-    <p class="cta-note mt-3 mb-0">通常2〜3営業日以内に返信します。インボイス対応の請求書を発行できます。</p>
+    <h2>装置1台・困りごと1つから、ご相談ください。</h2>
+    <p>仕様書はなくても構いません。今はどう作業していて、何を変えたいかを分かる範囲でお知らせください。<br>MELSEC-F・MELSEC-Aなど古いPLCの更新も承ります。</p>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <a href="contact.html?category=new-development" class="btn btn-accent btn-lg">作りたい仕組みを相談する <i class="fas fa-arrow-right ms-1" aria-hidden="true"></i></a>
+      <a href="contact.html?category=plc-renewal" class="btn btn-outline-white btn-lg">古いPLCの更新を相談する</a>
+    </div>
+    <p class="cta-note mt-3 mb-0">通常2〜3営業日以内に返信します。インボイス登録済みで、対応の請求書を発行できます。労災保険（第二種特別加入）に加入しています。<br>大手重工メーカーと4年にわたり継続してお取引しています。個人への直接発注が難しい場合は、お取引のある商社経由でのご契約も可能です。</p>
   </div>
 </section>
 
@@ -486,7 +606,7 @@
     <div class="row gy-4">
       <div class="col-lg-4">
         <div class="footer-brand">FA <span>Labo</span></div>
-        <p class="small mt-2">フリーランスFAエンジニア よしのぶ<br>PLC・制御盤改造・HMI/SCADAの専門家</p>
+        <p class="small mt-2">フリーランスFAエンジニア よしのぶ<br>PLC・PC連携・制御盤改造・HMI/SCADA</p>
         <div class="mt-3">
           <a href="https://x.com/fa_yoshinobu" class="social-link" target="_blank" rel="noopener" title="Twitter/X" aria-label="Twitter/X"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
           <a href="https://qiita.com/fa_yoshinobu" class="social-link" target="_blank" rel="noopener" title="Qiita" aria-label="Qiita"><i class="fas fa-pen-nib" aria-hidden="true"></i></a>
@@ -498,6 +618,7 @@
         <ul class="list-unstyled small">
           <li class="mb-1"><a href="./">ホーム</a></li>
           <li class="mb-1"><a href="services.html">サービス</a></li>
+          <li class="mb-1"><a href="system-development.html">システム開発</a></li>
           <li class="mb-1"><a href="works.html">実績</a></li>
           <li class="mb-1"><a href="tools.html">無料ツール</a></li>
           <li class="mb-1"><a href="paid-tools.html">有料ツール</a></li>
