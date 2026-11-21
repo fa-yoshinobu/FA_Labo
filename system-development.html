@@ -6,10 +6,10 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <title>設備の検査・記録・監視システム開発 | FA Labo</title>
-  <meta name="description" content="PLCとPCをつなぎ、検査結果の自動記録や稼働監視など、設備の手作業を減らす仕組みをつくります。新作装置への組み込み、既存設備への後付け、企業との共同開発に対応。構成例と相談の進め方をご案内します。">
-  <meta property="og:title" content="設備の検査・記録・監視システム開発 | FA Labo">
-  <meta property="og:description" content="PLCとPCをつなぎ、検査結果の自動記録や稼働監視など、設備の手作業を減らす仕組みをつくります。新作装置への組み込み、既存設備への後付け、企業との共同開発に対応。構成例と相談の進め方をご案内します。">
+  <title>設備のPLC・PC連携システム開発 | FA Labo</title>
+  <meta name="description" content="PLCとPCをつなぎ、稼働監視や停止前後の信号記録など、設備の手作業を減らす仕組みをつくります。新作装置への組み込み、既存設備への後付け、企業との共同開発に対応。用途例と相談の進め方をご案内します。">
+  <meta property="og:title" content="設備のPLC・PC連携システム開発 | FA Labo">
+  <meta property="og:description" content="PLCとPCをつなぎ、稼働監視や停止前後の信号記録など、設備の手作業を減らす仕組みをつくります。新作装置への組み込み、既存設備への後付け、企業との共同開発に対応。用途例と相談の進め方をご案内します。">
   <meta property="og:type" content="website">
   <link rel="canonical" href="https://fa-labo.com/system-development.html">
   <meta property="og:url" content="https://fa-labo.com/system-development.html">
@@ -78,7 +78,7 @@
 
 <div class="page-header">
   <div class="container">
-    <h1>設備の検査・記録・監視システム開発</h1>
+    <h1>設備のPLC・PC連携システム開発</h1>
     <p>PLCとPCをつなぎ、現場の手作業を減らす仕組みをつくります</p>
   </div>
 </div>
@@ -92,28 +92,21 @@
       <p class="section-sub">対応機種や技術の一覧より先に、使う人の作業がどう変わるかを一緒に考えます。</p>
     </div>
     <div class="row g-4">
-      <div class="col-md-6 col-lg-3">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="fas fa-clipboard-check" aria-hidden="true"></i></div>
-          <h3>検査結果を手で書き写している</h3>
-          <p class="text-muted small">測定値や合否を手書き・転記していて、後から製品番号で結果を追いにくい。</p>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="feature-card">
           <div class="feature-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
           <h3>設備の稼働状況が見えない</h3>
           <p class="text-muted small">いつ・どれだけ止まっていたかが分からず、改善の手がかりがつかめない。</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="feature-card">
           <div class="feature-icon"><i class="fas fa-wave-square" aria-hidden="true"></i></div>
           <h3>停止の前後に何が起きたか追えない</h3>
           <p class="text-muted small">まれに起きる停止の原因を調べたいが、そのときの信号の動きが残っていない。</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="feature-card">
           <div class="feature-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
           <h3>PC連携まで手が回らない</h3>
@@ -124,57 +117,13 @@
   </div>
 </section>
 
-<!-- 構成例 -->
-<section class="section section-alt" id="inspection-demo">
-  <div class="container">
-    <div class="text-center mb-4">
-      <span class="skill-tag accent">構成例</span>
-      <h2 class="section-title mt-3">検査結果を <span>製品ごとに自動で残す</span></h2>
-      <div class="divider mx-auto"></div>
-      <p class="section-sub">手書き・転記をなくし、製品番号から過去の結果をすぐに探せるようにする仕組みの例です。</p>
-    </div>
-
-    <div class="flow-diagram" role="img" aria-label="構成図：バーコードリーダーで製品番号を読み取り、PLCの合否と測定値をPCが製品番号にひも付けてデータベースに保存し、検索画面で過去の結果を探す">
-      <div class="flow-node"><i class="fas fa-qrcode" aria-hidden="true"></i><strong>バーコード</strong><span>製品番号を読み取る</span></div>
-      <div class="flow-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
-      <div class="flow-node"><i class="fas fa-microchip" aria-hidden="true"></i><strong>PLC</strong><span>合否・測定値</span></div>
-      <div class="flow-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
-      <div class="flow-node accent"><i class="fas fa-laptop-code" aria-hidden="true"></i><strong>PC</strong><span>製品番号にひも付けて保存</span></div>
-      <div class="flow-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></div>
-      <div class="flow-node"><i class="fas fa-desktop" aria-hidden="true"></i><strong>検索画面</strong><span>製品番号で過去の結果を確認</span></div>
-    </div>
-
-    <div class="row g-4 mt-2">
-      <div class="col-lg-4">
-        <div class="process-step">
-          <h3>困りごと</h3>
-          <p>測定値や合否を手書き・転記していて、問い合わせや不良調査のときに、製品番号から当時の結果を探すのに時間がかかる。</p>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="process-step">
-          <h3>作る仕組み</h3>
-          <p>検査前にバーコードを読み取り、検査が終わるとPLCの合否と測定値を製品番号と一緒に自動で保存。PCで製品番号から過去の結果を検索します。</p>
-        </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="process-step">
-          <h3>小さく始める</h3>
-          <p>まずは装置1台・検査1工程・検索画面1つから。効果を確かめてから、工程や装置を広げられます。</p>
-        </div>
-      </div>
-    </div>
-    <p class="small text-muted text-center mt-4 mb-0">※ 説明用の構成例で、特定のお客様への導入実績ではありません。</p>
-  </div>
-</section>
-
 <!-- 用途例 -->
 <section class="section">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="section-title">ほかの <span>用途例</span></h2>
+      <h2 class="section-title">設備に合わせた <span>用途例</span></h2>
       <div class="divider mx-auto"></div>
-      <p class="section-sub">同じようにPLCのデータをPCで扱うことで、次のような仕組みもつくれます。</p>
+      <p class="section-sub">PLCのデータをPCで扱い、現場の作業に合わせた仕組みをつくります。</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6">
@@ -275,28 +224,28 @@
       <p class="section-sub">大手重工メーカーと4年にわたり継続してお取引しています。個人事業主への発注で気になりやすい点について、あらかじめお伝えしておきます。</p>
     </div>
     <div class="row g-4">
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="feature-card">
           <div class="feature-icon"><i class="fas fa-user-tie" aria-hidden="true"></i></div>
           <h3>窓口と開発者が同じ</h3>
           <p class="text-muted small">ご相談を伺った本人が、設計から現場の試運転まで担当します。伝言で仕様がずれることがありません。</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="feature-card">
           <div class="feature-icon"><i class="fas fa-book-open" aria-hidden="true"></i></div>
           <h3>引き継げる形で残す</h3>
           <p class="text-muted small">仕様書・構成図・ソースなど納品物の範囲を最初に決め、ほかの技術者でも保守を引き継げる形でお渡しします。</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="feature-card">
           <div class="feature-icon"><i class="fas fa-file-invoice-dollar" aria-hidden="true"></i></div>
           <h3>契約・書類・労災保険</h3>
           <p class="text-muted small">適格請求書発行事業者（インボイス）に登録済みで、インボイス対応の請求書を発行します。秘密保持契約の締結にも対応します。労働者災害補償保険（第二種特別加入）に加入しているので、更新工事や盤改造など現場作業の際に求められる労災加入の確認にもそのまま対応できます。個人への直接発注が難しい場合は、お取引のある商社経由でのご契約も可能です。</p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4">
         <div class="feature-card">
           <div class="feature-icon"><i class="fas fa-tasks" aria-hidden="true"></i></div>
           <h3>無理な範囲は最初に伝える</h3>
@@ -315,28 +264,28 @@
       <div class="divider mx-auto"></div>
     </div>
     <ol class="row g-4 list-unstyled process-list">
-      <li class="col-md-6 col-lg-3">
+      <li class="col-md-6 col-lg-4">
         <div class="process-step">
           <span class="step-number" aria-hidden="true">01</span>
           <h3>今の作業を伺う</h3>
           <p>今どう作業していて、何を変えたいか、対象装置と希望時期を伺います。仕様書はなくても構いません。</p>
         </div>
       </li>
-      <li class="col-md-6 col-lg-3">
+      <li class="col-md-6 col-lg-4">
         <div class="process-step">
           <span class="step-number" aria-hidden="true">02</span>
           <h3>構成と範囲のご提案</h3>
           <p>最初に作る範囲を絞り、構成・作業範囲・見積もりをご提示します。</p>
         </div>
       </li>
-      <li class="col-md-6 col-lg-3">
+      <li class="col-md-6 col-lg-4">
         <div class="process-step">
           <span class="step-number" aria-hidden="true">03</span>
           <h3>開発・事前検証</h3>
           <p>PLC側とPC側を開発し、保有する実機で可能な範囲の動作を確かめます。</p>
         </div>
       </li>
-      <li class="col-md-6 col-lg-3">
+      <li class="col-md-6 col-lg-4">
         <div class="process-step">
           <span class="step-number" aria-hidden="true">04</span>
           <h3>現場での導入</h3>
